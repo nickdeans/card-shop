@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+/*** Top Navbar Styling ***/
+
 .icon-logos {
   font-size: 1.25rem;
   margin-left: 2rem;
@@ -24,6 +26,36 @@ code {
 
 .nav-header {
   color: white;
-  margin-top: 50;
-  margin-left: 5rem;
+  margin-top: .75rem ;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+}
+
+.dropdown-item:hover{
+  background-color: orange !important;
+}
+
+/*** Bottom Navbar Styling ***/
+
+.test {
+  
+}
+
+.bottom-nav {
+  background-color: black;
+}
+
+.bottom-nav-buttons {
+  color: white !important;
+  border-color: orange !important;
+}
+
+.bottom-nav-buttons:hover {
+  background-color: orange !important;
+}
+
+#basic-nav-dropdown {
+  color: white;
 }

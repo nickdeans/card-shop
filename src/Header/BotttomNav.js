@@ -1,13 +1,44 @@
-
+import Dropdown from 'react-bootstrap/Dropdown'
+import 'bootstrap/js/dist/dropdown'
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Form from 'react-bootstrap/Form'
+import FormControl from 'react-bootstrap/FormControl'
+import Button from 'react-bootstrap/Button'
 
 const BottomNav = () => {
     return (
-    <>
-        <div>
-            Hi
-        </div>
-    </>
+        <Navbar className='bottom-nav'>
+            <Container>
+                <Navbar.Brand className='bottom-nav-buttons'>Logo?</Navbar.Brand>
+                <Navbar.Collapse>
+                    <Nav className="ml-auto">
+                        <NavDropdown title="Shop" id="basic-nav-dropdown" className='bottom-nav-buttons'>
+                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#home" className='bottom-nav-buttons'>Live Breaks</Nav.Link>
+                        <Nav.Link href="#link" className='bottom-nav-buttons'>Release Schedule</Nav.Link>
+                        <Nav.Link href="#link" className='bottom-nav-buttons'>About</Nav.Link>
+                        <Form className="d-flex">
+      <FormControl
+        type="search"
+        placeholder="Search"
+        className="mr-2"
+        aria-label="Search"
+      />
+      <Button variant="outline-success" className='bottom-nav-buttons'>Search</Button>
+    </Form>                    </Nav>
+                </Navbar.Collapse>
+
+            </Container>
+        </Navbar>
     );
-  }
-  
-  export default BottomNav;
+}
+
+export default BottomNav;
