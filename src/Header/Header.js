@@ -1,8 +1,12 @@
-function Header() {
+import TopNav from './TopNav'
+import BottomNav from './BotttomNav'
+
+const Header = () => {
     return (
     <>
       <header>
-        Hello World!
+        <TopNav />
+        <BottomNav />
       </header>
     </>
     );
