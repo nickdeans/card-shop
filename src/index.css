@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.icon-logos {
+  font-size: 1.25rem;
+  margin-left: 2rem;
+  margin-right: .2rem;
+}
+
+.social-icon {
+  margin: .15rem
+}
+
+.nav-header {
+  color: white;
+  margin-top: 50;
+  margin-left: 5rem;
+}
