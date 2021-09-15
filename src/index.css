@@ -15,18 +15,23 @@ code {
 /*** Top Navbar Styling ***/
 
 .icon-logos {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-left: 2rem;
   margin-right: .2rem;
+
 }
 
 .social-icon {
-  margin: .15rem
+  margin: .15rem;
 }
 
 .nav-header {
   color: white;
-  margin-top: .75rem ;
+  margin-top: .75rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown-menu {
@@ -37,19 +42,26 @@ code {
   background-color: orange !important;
 }
 
+.top-nav-text {
+  font-size: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*** Bottom Navbar Styling ***/
 
-.test {
-  
-}
 
 .bottom-nav {
   background-color: black;
+  height: 6rem;
+  font-size: 1.5rem;
 }
 
 .bottom-nav-buttons {
   color: white !important;
   border-color: orange !important;
+  margin-right: 2.5rem;
 }
 
 .bottom-nav-buttons:hover {
@@ -58,4 +70,11 @@ code {
 
 #basic-nav-dropdown {
   color: white;
+}
+
+#test {
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

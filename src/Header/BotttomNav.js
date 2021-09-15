@@ -11,32 +11,30 @@ import Button from 'react-bootstrap/Button'
 const BottomNav = () => {
     return (
         <Navbar className='bottom-nav'>
-            <Container>
-                <Navbar.Brand className='bottom-nav-buttons'>Logo?</Navbar.Brand>
-                <Navbar.Collapse>
-                    <Nav className="ml-auto">
-                        <NavDropdown title="Shop" id="basic-nav-dropdown" className='bottom-nav-buttons'>
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#home" className='bottom-nav-buttons'>Live Breaks</Nav.Link>
-                        <Nav.Link href="#link" className='bottom-nav-buttons'>Release Schedule</Nav.Link>
-                        <Nav.Link href="#link" className='bottom-nav-buttons'>About</Nav.Link>
-                        <Form className="d-flex">
-      <FormControl
-        type="search"
-        placeholder="Search"
-        className="mr-2"
-        aria-label="Search"
-      />
-      <Button variant="outline-success" className='bottom-nav-buttons'>Search</Button>
-    </Form>                    </Nav>
-                </Navbar.Collapse>
-
-            </Container>
+            <Navbar.Brand className='bottom-nav-buttons'>Logo?</Navbar.Brand>
+            <Navbar.Collapse>
+                <Nav className="ms-auto">
+                    <NavDropdown title="Shop" id="basic-nav-dropdown" className='bottom-nav-buttons'>
+                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link href="#home" className='bottom-nav-buttons'>Live Breaks</Nav.Link>
+                    <Nav.Link href="#link" className='bottom-nav-buttons'>Release Schedule</Nav.Link>
+                    <Nav.Link href="#link" className='bottom-nav-buttons'>About</Nav.Link>
+                    <Form className="d-flex" id='test'>
+                        <FormControl
+                            size='md'
+                            type="search"
+                            placeholder="Search"
+                            className="mr-2"
+                            aria-label="Search"
+                        />
+                        <Button variant="outline-success" className='bottom-nav-buttons'>Search</Button>
+                    </Form>                    </Nav>
+            </Navbar.Collapse>
         </Navbar>
     );
 }
