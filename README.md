@@ -1,5 +1,5 @@
 # ND Sports Cards
-An ecommerce sports cards website where users can purchase sports card singles, boxes, and live breaks.
+An e-commerce sports cards website where users can purchase sports card singles, boxes, and live breaks.
 
 ## Deployment
 www.NDSportsCards.com
