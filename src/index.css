@@ -108,3 +108,21 @@ code {
   transform: skewY(-3deg);
   z-index: 2;
 }
+
+.mid-headline {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  box-shadow: rgba(240, 46, 170, 0.4) -3px 3px, rgba(240, 46, 170, 0.3) -5px 5px, rgba(240, 46, 170, 0.2) -10px 10px, rgba(240, 46, 170, 0.1) -14px 14px, rgba(240, 46, 170, 0.05) -18px 18px;
+  /* box-shadow: violet 5px 5px;  */
+}
