@@ -1,9 +1,13 @@
-function Main() {
+import TopMain from './TopMain'
+import MidMain from './MidMain'
+
+const Main = () => {
     return (
     <>
-      <header>
-        Hello World!
-      </header>
+      <main>
+        <TopMain />
+        <MidMain />
+      </main>
     </>
     );
   }
