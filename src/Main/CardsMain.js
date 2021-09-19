@@ -33,10 +33,11 @@ const CardsMain = () => {
                                 <Card style={{ width: '9rem' }} className="e-card e-card-horizontal">
                                     <Card.Img variant="top" src={brady} />
                                     <Card.Body>
-                                        <Card.Title className='card-info'>{name} {price}</Card.Title>
+                                        <Card.Title className='card-info'>{name}</Card.Title>
                                         <Card.Text className='card-info'>
                                             {text}
                                         </Card.Text>
+                                        <div className='card-info'>${price} / Price</div>
                                         <div className='card-info'>
                                         <Button variant="dark">Details</Button>
                                         </div>
@@ -45,9 +46,6 @@ const CardsMain = () => {
                             </div>
                         )
                     })}
-                    <button onClick={() => setDataArray([])}>
-                        Clear items
-                </button>
                 </ItemsCarousel>
             </div>
         </>
