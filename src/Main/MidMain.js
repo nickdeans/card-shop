@@ -5,7 +5,7 @@ const MidMain = () => {
         <>
             <div>
                 <div className='customImg' />
-                <div className='mid-headline'>Trending Cards</div>
+                <div className='top-headline'>Trending Cards</div>
             </div>
         </>
     )

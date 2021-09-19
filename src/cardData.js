@@ -31,6 +31,22 @@ const data = [
         text: 'Hello peoples'
 
     },
+    {
+        id: 5,
+        name: 'Jimmy Jims',
+        price: 9.99,
+        image: '',
+        text: 'Hello peoples'
+
+    },
+    {
+        id: 6,
+        name: 'Jim Jonhson',
+        price: 9.99,
+        image: '',
+        text: 'Hello peoples'
+
+    },
 ]
 
 export default data;
