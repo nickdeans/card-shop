@@ -1,7 +1,6 @@
 import TopMain from './TopMain'
 import MidMain from './MidMain'
 import CardsMain from './CardsMain'
-import { useState } from 'react'
 import BottomMain from './BottomMain'
 import NewProduct from './NewProduct'
 
