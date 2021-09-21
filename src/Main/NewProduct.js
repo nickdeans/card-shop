@@ -5,22 +5,26 @@ import box from '../images/box.png'
 const NewProduct = () => {
     return (
         <>
-            <div>
+            <div className='new-release-container'>
                 <div className='customImgTwo'>
-                    <div>
-                        <Card style={{ width: '18rem' }}>
+                    <div className='card-container'>
+                        <Card className='product-container'>
                             <Card.Img variant="top" src={box} className='box-img' />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
+                            <Card.Body  >
+                                <Card.Title className='card-content'>Card Title</Card.Title>
+                                <Card.Text className='card-content'>
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card's content.
                                 </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <div className='card-content'>
+
+                                <Button variant="primary" >Go somewhere</Button>
+                                </div>
                             </Card.Body>
                         </Card>
                     </div>
-                    <div>                        <Card style={{ width: '18rem' }}>
+                    <div>                        
+                        <Card className='product-container2'>
                             <Card.Img variant="top" src={box} className='box-img' />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>

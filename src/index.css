@@ -138,7 +138,6 @@ code {
   width: 15rem !important;
   padding: 1rem;
   border-radius: 25px !important;
-  /* float: left; */
 }
 
 .card-info {
@@ -152,14 +151,19 @@ code {
   top: -12rem;
 }
 
-/*** New Product ***/
+/*** New Releases ***/
+
+/* .new-release-container {
+  height: 20rem;
+} */
 
 .customImgTwo {
-  /* height: 10rem; */
   display: flex;
   justify-content: space-evenly;
-  /* align-content: center; */
   background-color: rgb(184, 184, 184);
+  top: -7rem !important;
+  position: relative;
+  height: 50rem;
 }
 
 .mid-headline {
@@ -172,7 +176,7 @@ code {
   width: 20rem;
   margin-left: auto;
   margin-right: auto;
-  top: -35rem;
+  top: -55rem;
   justify-content: center;
   align-items: center;
   font-size: 40px;
@@ -181,12 +185,39 @@ code {
 }
 
 .box-img {
-  display: flex !important;
-  flex-direction: row !important;
-  float:  left !important;
-  width: 20rem !important;
+  width: 60% !important;
 }
 
+.product-container {
+  width: 50rem !important;
+  background-color: tomato !important;
+  top: 10rem;
+  display: flex !important;
+  flex-direction: row !important;
+  align-content: center !important;
+  justify-content: center !important;
+  border: black solid 2rem !important;
+  align-items: center !important;
+}
+
+.product-container2 {
+  width: 50rem !important;
+  background-color: tomato !important;
+  top: 10rem;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-content: center !important;
+  justify-content: center !important;
+  border: black solid 2rem !important;
+  align-items: center !important;
+}
+
+.card-content {
+  justify-content: right!important;
+  align-items: right !important;
+  display: flex !important;
+  text-align: right;
+}
 
 /*** Bottom Main ***/
 
