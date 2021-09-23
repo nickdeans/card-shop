@@ -6,15 +6,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Switch, Route } from 'react-router-dom'
 import PaymentForm from './PaymentForm'
 
+import React from 'react';
+import StripeContainer from './Stripe/StripeContainer';
+
 
 function App() {
   return (
   <>
-    <Switch>
-      <Route path='/' exact>
-        <PaymentForm />
-      </Route>
-    </Switch>
+        <div className='App'>
+          <StripeContainer />
+        </div>
     {/* <Header />
     <Main />
     <Footer /> */}

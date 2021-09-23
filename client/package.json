@@ -1,5 +1,5 @@
 {
-  "name": "accept-a-payment",
+  "name": "checkout-one-time-payments-react-cra",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
     "bootstrap": "^5.1.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
@@ -28,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:4342",
+  "proxy": "http://0.0.0.0:4242",
   "eslintConfig": {
     "extends": [
       "react-app",
