@@ -1,0 +1,244 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*** Top Navbar Styling ***/
+
+.icon-logos {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: .2rem;
+}
+
+.social-icon {
+  margin: .15rem;
+}
+
+.nav-header {
+  color: white;
+  margin-top: .75rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+}
+
+.dropdown-item:hover{
+  background-color: orange !important;
+}
+
+.top-nav-text {
+  font-size: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** Bottom Navbar Styling ***/
+
+
+.bottom-nav {
+  background-color: black;
+  height: 6rem;
+  font-size: 1.5rem;
+}
+
+.bottom-nav-buttons {
+  color: white !important;
+  border-color: orange !important;
+  margin-right: 2.5rem;
+}
+
+.bottom-nav-buttons:hover {
+  background-color: orange !important;
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+
+#search-bar{
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-dropdown-text {
+  color: white !important;
+}
+
+.shop-dropdown-divider {
+  color: rgb(249, 253, 0) !important;
+  height: .25rem !important;
+}
+
+
+/*** Top Main ***/
+
+
+#tempImg {
+  height: 40rem;
+}
+
+.customImg {
+  height: 10rem;
+  background-color: orange;
+  content: "";
+  display: block;
+  position: relative;
+  top: -4rem;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+  z-index: 2;
+}
+
+.top-headline {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 25px !important;
+  box-shadow: rgba(240, 46, 170, 0.4) -3px 3px, rgba(240, 46, 170, 0.3) -5px 5px, rgba(240, 46, 170, 0.2) -10px 10px, rgba(240, 46, 170, 0.1) -14px 14px, rgba(240, 46, 170, 0.05) -18px 18px;
+}
+
+/*** Individual Card Rendering ***/
+
+.card {
+  background-color: rgb(122, 122, 122) !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35rem;
+  width: 15rem !important;
+  padding: 1rem;
+  border-radius: 25px !important;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  position: relative;
+  z-index: 3;
+  top: -12rem;
+}
+
+/*** New Releases ***/
+
+/* .new-release-container {
+  height: 20rem;
+} */
+
+.customImgTwo {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(184, 184, 184);
+  top: -7rem !important;
+  position: relative;
+  height: 50rem;
+}
+
+.mid-headline {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: -55rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 25px !important;
+  box-shadow: rgba(240, 46, 170, 0.4) -3px 3px, rgba(240, 46, 170, 0.3) -5px 5px, rgba(240, 46, 170, 0.2) -10px 10px, rgba(240, 46, 170, 0.1) -14px 14px, rgba(240, 46, 170, 0.05) -18px 18px;
+}
+
+.box-img {
+  width: 60% !important;
+}
+
+.product-container {
+  width: 50rem !important;
+  background-color: tomato !important;
+  top: 10rem;
+  display: flex !important;
+  flex-direction: row !important;
+  align-content: center !important;
+  justify-content: center !important;
+  border: black solid 2rem !important;
+  align-items: center !important;
+}
+
+.product-container2 {
+  width: 50rem !important;
+  background-color: tomato !important;
+  top: 10rem;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-content: center !important;
+  justify-content: center !important;
+  border: black solid 2rem !important;
+  align-items: center !important;
+}
+
+.card-content {
+  justify-content: right!important;
+  align-items: right !important;
+  display: flex !important;
+  text-align: right;
+}
+
+/*** Bottom Main ***/
+
+.customImgThree {
+  height: 10rem;
+  background-color: orange;
+  content: "";
+  display: block;
+  position: relative;
+  top: -4rem;
+  left: 0;
+  right: 0;
+  transform: skewY(3deg);
+  z-index: 2;
+}
+
+.bottom-headline {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 25px !important;
+  box-shadow: rgba(240, 46, 170, 0.4) -3px 3px, rgba(240, 46, 170, 0.3) -5px 5px, rgba(240, 46, 170, 0.2) -10px 10px, rgba(240, 46, 170, 0.1) -14px 14px, rgba(240, 46, 170, 0.05) -18px 18px;
+}

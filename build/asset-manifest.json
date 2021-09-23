@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5011c8ac.chunk.css",
+    "main.js": "/static/js/main.75a4553d.chunk.js",
+    "main.js.map": "/static/js/main.75a4553d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ecd959b0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ecd959b0.js.map",
+    "static/css/2.f2512455.chunk.css": "/static/css/2.f2512455.chunk.css",
+    "static/js/2.b7566eb0.chunk.js": "/static/js/2.b7566eb0.chunk.js",
+    "static/js/2.b7566eb0.chunk.js.map": "/static/js/2.b7566eb0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.5011c8ac.chunk.css.map": "/static/css/main.5011c8ac.chunk.css.map",
+    "static/js/2.b7566eb0.chunk.js.LICENSE.txt": "/static/js/2.b7566eb0.chunk.js.LICENSE.txt",
+    "static/media/box.3992f225.png": "/static/media/box.3992f225.png",
+    "static/media/brady.4b7945dd.jpeg": "/static/media/brady.4b7945dd.jpeg",
+    "static/media/insta.f6c2effa.svg": "/static/media/insta.f6c2effa.svg",
+    "static/media/testImg.00d6bbce.jpeg": "/static/media/testImg.00d6bbce.jpeg",
+    "static/media/testImg2.bb005b3b.jpeg": "/static/media/testImg2.bb005b3b.jpeg",
+    "static/media/testImg3.c18bcd3a.jpeg": "/static/media/testImg3.c18bcd3a.jpeg",
+    "static/media/twitter.fe1aaa10.svg": "/static/media/twitter.fe1aaa10.svg",
+    "static/media/youtube.248ee5e3.svg": "/static/media/youtube.248ee5e3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecd959b0.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.b7566eb0.chunk.js",
+    "static/css/main.5011c8ac.chunk.css",
+    "static/js/main.75a4553d.chunk.js"
+  ]
+}
