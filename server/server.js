@@ -74,7 +74,7 @@ app.post('/create-checkout-session', async (req, res) => {
     payment_method_types: pmTypes,
     mode: 'payment',
     line_items: [
-      {
+      { 
         price: process.env.PRICE,
         quantity: quantity
       },

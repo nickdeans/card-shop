@@ -26,8 +26,12 @@ const TopNav = () => {
                         </Dropdown.Menu>
                     </Dropdown>
                     <Navbar.Brand style={{ color: 'white' }} className='top-nav-text'>
+                        <div>
                         <FaShoppingCart className='icon-logos' />
+                        <span className='cart-count'>5</span>
                         Cart
+
+                        </div>
                         <FaLock className='icon-logos' />
                         Login
                     </Navbar.Brand>
