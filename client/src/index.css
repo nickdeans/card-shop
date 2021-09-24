@@ -39,6 +39,12 @@ code {
   align-items: center;
 }
 
+.cart-count {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
 /*** Bottom Navbar Styling ***/
 
 
