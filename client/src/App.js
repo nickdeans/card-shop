@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './Header/Header'
-import Main from './Main/Main'
-import Footer from './Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Switch, Route} from 'react-router-dom'
+import HomePage from './HomePage/HomePage'
+import NotFound from './404notfound'
 
 import React from 'react';
 import StripeContainer from './Stripe/StripeContainer';
@@ -14,9 +14,10 @@ function App() {
         {/* <div className='App'>
           <StripeContainer />
         </div> */}
-    <Header />
-    <Main />
-    <Footer />
+    <Switch>
+      <Route exact path='/' component={HomePage} />
+      <Route path='*' component={NotFound} />
+    </Switch>
   </>
   );
 }
