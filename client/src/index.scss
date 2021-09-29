@@ -5,3 +5,27 @@
 //     font-family: 'Lobster';
 // }
 
+// Featured products section
+.featured-collection {
+    margin-top: 6rem;
+  
+    .featured-section-title {
+      font-size: 2rem;
+    }
+  
+    .featured-image {
+      cursor: pointer;
+    }
+  
+    @media(min-width: 1024px) {
+      .products {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+  
+        .featured-product {
+          margin: 10px;
+        }
+      }
+    }
+  }
