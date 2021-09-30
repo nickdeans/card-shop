@@ -2,7 +2,7 @@ import { useState } from 'react';
 import data from '../cardData';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import brady from '../images/brady.jpeg'
+// import brady from '../images/brady.jpeg'
 import ItemsCarousel from 'react-items-carousel';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 
@@ -31,7 +31,7 @@ const CardsMain = () => {
                         return (
                             <div key={id} className='card' className="e-card e-card-horizontal">
                                 <Card style={{ width: '9rem' }} className="e-card e-card-horizontal">
-                                    <Card.Img variant="top" src={brady} />
+                                    <Card.Img variant="top" src={image} />
                                     <Card.Body>
                                         <Card.Title className='card-info'>{name}</Card.Title>
                                         <Card.Text className='card-info'>
