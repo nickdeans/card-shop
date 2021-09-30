@@ -1,7 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel'
-import testImg from '../images/testImg.jpeg'
-import testImg2 from '../images/testImg2.jpeg'
-import testImg3 from '../images/testImg3.jpeg'
+import { FaChevronCircleRight } from 'react-icons/fa'
+import cover from '../images/cover.jpg'
+import cover1 from '../images/cover1.jpg'
+import cover2 from '../images/cover2.jpg'
 
 const TopMain = () => {
     return (
@@ -11,7 +12,7 @@ const TopMain = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={testImg}
+                            src={cover}
                             alt="First slide"
                             id='tempImg'
                         />
@@ -22,7 +23,7 @@ const TopMain = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={testImg2}
+                            src={cover1}
                             alt="Second slide"
                             id='tempImg'
                         />
@@ -34,7 +35,7 @@ const TopMain = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={testImg3}
+                            src={cover2}
                             alt="Third slide"
                             id='tempImg'
                         />

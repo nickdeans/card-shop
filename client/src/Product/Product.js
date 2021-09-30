@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { isInCart } from '../helpers'
 import { CartContext } from '../context/cart-context'
-import brady from '../images/brady.jpeg';
+// import brady from '../images/brady.jpeg';
 import { withRouter } from 'react-router-dom';
 import './product.scss'
 
@@ -13,7 +13,7 @@ const FeaturedProduct = (props) => {
     return (
         <div className='featured-product'>
             <div className='featured-image' onClick={() => history.push(`/product/${id}`)}>
-                <img src={brady} alt='product' />
+                <img src={image} alt='product' />
             </div>
             <div>
                 <h3>{name}</h3>

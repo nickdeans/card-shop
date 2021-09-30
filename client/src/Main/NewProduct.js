@@ -1,6 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import box from '../images/box.png'
+import box2 from '../images/opticc.png'
 
 const NewProduct = () => {
     return (
@@ -25,7 +26,7 @@ const NewProduct = () => {
                     </div>
                     <div>                        
                         <Card className='product-container2'>
-                            <Card.Img variant="top" src={box} className='box-img' />
+                            <Card.Img variant="top" src={box2} className='box-img' />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>

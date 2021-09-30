@@ -2,7 +2,7 @@ import { useState } from 'react';
 import data from '../cardData';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import brady from '../images/brady.jpeg'
+// import brady from '../images/brady.jpeg'
 import ItemsCarousel from 'react-items-carousel';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 
