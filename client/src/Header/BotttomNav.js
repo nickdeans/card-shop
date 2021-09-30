@@ -21,6 +21,7 @@ const BottomNav = () => {
                         <NavDropdown.Divider className='shop-dropdown-divider'/>
                         <NavDropdown.Item href="#action/3.4" className='shop-dropdown-text'>Separated link</NavDropdown.Item>
                     </NavDropdown> */}
+                    <Nav.Link href="/" className='bottom-nav-buttons'>Home</Nav.Link>
                     <Nav.Link href="/shop" className='bottom-nav-buttons'>Shop</Nav.Link>
                     <Nav.Link href="#home" className='bottom-nav-buttons'>Live Breaks</Nav.Link>
                     <Nav.Link href="#link" className='bottom-nav-buttons'>Release Schedule</Nav.Link>

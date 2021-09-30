@@ -31,7 +31,7 @@ const CardsMain = () => {
                         return (
                             <div key={id} className='card' className="e-card e-card-horizontal">
                                 <Card style={{ width: '9rem' }} className="e-card e-card-horizontal">
-                                    <Card.Img variant="top" src={brady} />
+                                    <Card.Img variant="top" src={image} />
                                     <Card.Body>
                                         <Card.Title className='card-info'>{name}</Card.Title>
                                         <Card.Text className='card-info'>

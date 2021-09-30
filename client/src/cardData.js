@@ -11,7 +11,7 @@ const data = [
         id: 2,
         name: 'Jimmy John',
         price: 29.99,
-        image: '',
+        image: require('./images/card1.jpeg'),
         text: 'Hello People'
 
     },
@@ -19,7 +19,7 @@ const data = [
         id: 3,
         name: 'Jim Johnson',
         price: 19.99,
-        image: '',
+        image: require('./images/card1.jpeg'),
         text: 'Hey People'
 
     },
@@ -27,7 +27,7 @@ const data = [
         id: 4,
         name: 'Jimmy Jones',
         price: 9.99,
-        image: '',
+        image: '../../images/card1.jpeg',
         text: 'Hello peoples'
 
     },

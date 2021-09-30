@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaPlus, FaMinus, FaTrashAlt } from 'react-icons/fa'
 
-const CartItem = (product) => {
-    const { name, image, price, quantity } = product;
+const CartItem = (props) => {
+    const { name, image, price, quantity, id, text, increase, decrease, removeProduct } = props;
+    const product = { name, image, price, quantity, id, text }
 
     return (
         <div className='cart-item'>
@@ -17,18 +18,18 @@ const CartItem = (product) => {
                 <p>{`Quantity: ${quantity}`}</p>
             </div>
             <div className='btns-container'>
-                <button className='btn-increase'>
+                <button className='btn-increase' onClick={() => increase(product)}>
                     <FaPlus />
                 </button>
                 {
                     quantity === 1 &&
-                    <button className='btn-trash'>
+                    <button className='btn-trash' onClick={() => removeProduct(product)}>
                         <FaTrashAlt />
                     </button>
                 }
                 {
                     quantity > 1 && 
-                    <button className='btn-decrease'>
+                    <button className='btn-decrease' onClick={() => decrease(product)}>
                         <FaMinus />
                     </button>
                 }

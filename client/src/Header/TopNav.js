@@ -6,11 +6,12 @@ import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
 import { CartContext } from '../context/cart-context';
 import React, { useContext } from 'react';
+import { withRouter } from 'react-router-dom'
 import 'bootstrap/js/dist/dropdown'
 import { FaLock, FaShoppingCart, FaTty } from 'react-icons/fa'
 
 
-const TopNav = () => {
+const TopNav = ({ history }) => {
     const { itemCount, cartItems } = useContext(CartContext)
     console.log('CartItems:', cartItems);
 
@@ -30,7 +31,7 @@ const TopNav = () => {
                             <Dropdown.Item style={{color: 'white'}}  href="#/action-2">Email: Nickabramowicz@gmail.com</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Navbar.Brand style={{ color: 'white' }} className='top-nav-text'>
+                    <Navbar.Brand style={{ color: 'white' }} className='top-nav-text' onClick={() => history.push('/cart')}>
                         <div>
                             <FaShoppingCart className='icon-logos' />
                             {
@@ -53,4 +54,4 @@ const TopNav = () => {
     );
 }
 
-export default TopNav;
+export default withRouter(TopNav);
