@@ -6,12 +6,18 @@ import './index.scss'
 import ProductsContextProvider from './context/products-context'
 import { BrowserRouter } from 'react-router-dom'
 import CartContextProvider from './context/cart-context'
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+
+const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY)
 
 ReactDOM.render(
   <BrowserRouter>
     <ProductsContextProvider>
       <CartContextProvider>
-        <App />
+        <Elements stripe={stripePromise}>
+          <App />
+        </Elements>
       </CartContextProvider>
     </ProductsContextProvider>
   </BrowserRouter>,
