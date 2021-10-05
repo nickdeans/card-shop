@@ -6,10 +6,11 @@ import NotFound from './404notfound'
 import Shop from './Pages/Shop'
 import SingleProduct from './SingleProduct/SingleProduct'
 import CartPage from './Cart/cart-page';
-import Checkout from './Checkout/Checkout'
+// import Checkout from './Checkout/Checkout'
+import CheckoutContainer from './Stripe/CheckoutContainer'
 
 import React from 'react';
-import StripeContainer from './Stripe/StripeContainer';
+// import StripeContainer from './Stripe/StripeContainer';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <Route path='/shop' component={Shop} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
-      <Route path='/checkout' component={Checkout} />
+      <Route path='/checkout' component={CheckoutContainer} />
       <Route path='*' component={NotFound} />
     </Switch>
   </>

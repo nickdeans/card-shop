@@ -19,7 +19,7 @@ const Stripe = () => {
         <Route path="/canceled.html">
           <Canceled />
         </Route>
-        <Route path="/">
+        <Route path="/checkout">
           <Checkout />
         </Route>
       </Switch>
