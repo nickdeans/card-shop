@@ -8,6 +8,7 @@ import { CartContext } from '../context/cart-context';
 import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom'
 import 'bootstrap/js/dist/dropdown'
+import './header.scss'
 import { FaLock, FaShoppingCart, FaTty } from 'react-icons/fa'
 
 
@@ -16,7 +17,7 @@ const TopNav = ({ history }) => {
     console.log('CartItems:', cartItems);
 
     return (
-        <>
+        <div className='top-nav-container'>
             <div style={{ backgroundColor: 'black', height: '3rem' }}>
                 <Navbar>
                     <Nav className="ms-auto">
@@ -50,7 +51,7 @@ const TopNav = ({ history }) => {
                     </Nav>
                 </Navbar>
             </div>
-        </>
+        </div>
     );
 }
 

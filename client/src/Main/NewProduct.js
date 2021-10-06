@@ -11,15 +11,14 @@ const NewProduct = () => {
                     <div className='card-container'>
                         <Card className='product-container'>
                             <Card.Img variant="top" src={box} className='box-img' />
-                            <Card.Body  >
-                                <Card.Title className='card-content'>Card Title</Card.Title>
-                                <Card.Text className='card-content'>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                            <Card.Body className='product-info'>
+                                <h1>2021 Certified Football Box</h1>
+                                <Card.Text>
+                                A popular early-season collecting staple arrives with the release of Panini America’s 2021 Certified Football, a captivating, colorful product. 
                                 </Card.Text>
                                 <div className='card-content'>
 
-                                <Button variant="primary" >Go somewhere</Button>
+                                <Button variant="dark" >Details</Button>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -27,13 +26,12 @@ const NewProduct = () => {
                     <div>                        
                         <Card className='product-container2'>
                             <Card.Img variant="top" src={box2} className='box-img' />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                            <Card.Body className='product-info'>
+                                <h1>2021 Optic Basketball Box</h1>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                Donruss Optic returns to the hardwood this year with a loaded new rookie class and a full arsenal of stunning parallel cards.
                                 </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="dark">Details</Button>
                             </Card.Body>
                         </Card></div>
                 </div>
