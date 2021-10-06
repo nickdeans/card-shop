@@ -18,8 +18,6 @@ const BottomMain = () => {
                                 <Card.Text>
                                 New die-cut inserts to Obsidian this year are Eclipse and Supernova, which feature the top superstars in the league today.                                </Card.Text>
                                 <div className='card-content'>
-
-                                <Button variant="dark" >Details</Button>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -31,7 +29,6 @@ const BottomMain = () => {
                                 <h1>2021 Spectra Baseball Box</h1>
                                 <Card.Text>
                                 It’s one of the most attractive sports card products you’ll ever see and delivers a bevy of short-printed hits that can, quite frankly, be stunning.                                </Card.Text>
-                                <Button variant="dark">Details</Button>
                             </Card.Body>
                         </Card>
                     </div>

@@ -38,7 +38,7 @@ const Checkout = () => {
       const {
         unitAmount,
         currency
-      } = await fetch('/config').then(r => r.json());
+      } = await fetch('https://nd-card-shop.herokuapp.com/config').then(r => r.json());
       setAmount(unitAmount);
       setCurrency(currency);
     }
