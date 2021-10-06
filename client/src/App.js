@@ -21,7 +21,7 @@ function App() {
         </div> */}
     <Switch>
       <Route exact path='/' component={HomePage} />
-      <Route path='/shop' component={Shop} />
+      <Route path='https://nd-card-shop.herokuapp.com/shop' component={Shop} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
       <Route path='/checkout' component={CheckoutContainer} />
