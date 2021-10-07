@@ -3,6 +3,7 @@ import { isInCart } from '../helpers'
 import { CartContext } from '../context/cart-context'
 // import brady from '../images/brady.jpeg';
 import { withRouter } from 'react-router-dom';
+import Button from 'react-bootstrap/Button'
 import './product.scss'
 
 const FeaturedProduct = (props) => {
@@ -12,20 +13,24 @@ const FeaturedProduct = (props) => {
     const itemInCart = isInCart(product, cartItems)
     return (
         <div className='featured-product'>
-            <div className='featured-image' onClick={() => history.push(`/product/${id}`)}>
-                <img src={image} alt='product' />
+            <div onClick={() => history.push(`/product/${id}`)}>
+                <img src={image} alt='product' className='featured-image'/>
             </div>
             <div>
-                <h3>{name}</h3>
-                <p>{price}</p>
+                <h3 className='card-information'>{name}</h3>
+                <h6 className='card-info2'>{text}</h6>
+                <p className='card-info3'>${price} / PRICE</p>
+                <div className='btn-style'>
                 {
                     !itemInCart &&
-                    <button onClick={() => addProduct(product)}>Add to Cart</button>
+                    <Button variant="dark" onClick={() => addProduct(product)}>Add to Cart</Button>
                 }
                 {
                     itemInCart &&
-                    <button onClick={() => increase(product)}>Add More</button>
+                    <Button variant="outline-dark" onClick={() => increase(product)}>Add More</Button>
                 }
+
+                </div>
             </div>
         </div>
     )

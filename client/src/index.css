@@ -111,7 +111,7 @@ code {
   position: relative;
   z-index: 3;
   height: 3rem;
-  background-color: black;
+  background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0,0,206), rgb(0, 0, 0));
   color: white;
   width: 20rem;
   margin-left: auto;
@@ -121,7 +121,7 @@ code {
   align-items: center;
   font-size: 40px;
   border-radius: 25px !important;
-  box-shadow: rgba(0, 1, 80, 0.4) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
+  box-shadow: rgb(0,0,206) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
 }
 
 /*** Individual Card Rendering ***/
@@ -192,6 +192,19 @@ code {
   /* border-radius: 25px; */
   top: 1.1rem;
   justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.card-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  top: -1.5rem !important;
+  position: relative;
 }
 
 /*** New Releases ***/
@@ -215,7 +228,7 @@ code {
   position: relative;
   z-index: 3;
   height: 3rem;
-  background-color: black;
+  background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0,0,206), rgb(0, 0, 0));
   color: white;
   width: 20rem;
   margin-left: auto;
@@ -225,7 +238,7 @@ code {
   align-items: center;
   font-size: 40px;
   border-radius: 25px !important;
-  box-shadow: rgba(0, 1, 80, 0.4) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
+  box-shadow: rgb(0,0,206) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
 }
 
 .box-img {
@@ -324,7 +337,7 @@ code {
   position: relative;
   z-index: 3;
   height: 3rem;
-  background-color: black;
+  background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0,0,206), rgb(0, 0, 0));
   color: white;
   width: 20rem;
   margin-left: auto;
@@ -334,7 +347,7 @@ code {
   align-items: center;
   font-size: 40px;
   border-radius: 25px !important;
-  box-shadow: rgba(0, 1, 80, 0.4) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
+  box-shadow: rgb(0,0,206) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
 }
 
 .customImgFour {
@@ -367,7 +380,6 @@ code {
   margin: 4rem auto;
   text-align: center;
   position: relative;
-  top: -10rem;
 }
 
 .footer-logo {
@@ -375,5 +387,4 @@ code {
   margin: 4rem auto;
   text-align: center;
   position: relative;
-  top: -10rem;
 }

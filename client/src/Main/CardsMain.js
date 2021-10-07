@@ -35,6 +35,7 @@ const CardsMain = () => {
                                          <Card.Img variant="top" src={image} />
                                     </div>
                                     <Card.Body className='card-info-container'>
+                                        <div className='card-content-container'>
                                         <Card.Title className='card-info'>{name}</Card.Title>
                                         <Card.Subtitle className='card-info-2'>
                                             {text}
@@ -42,6 +43,8 @@ const CardsMain = () => {
                                         <h6 className='card-info-3'>${price} / Price</h6>
                                         <div className='card-info-4'>
                                         <Button variant="dark">Details</Button>
+                                        </div>
+
                                         </div>
                                     </Card.Body>
                                 </Card>
