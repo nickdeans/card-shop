@@ -31,14 +31,16 @@ const CardsMain = () => {
                         return (
                             <div key={id} className='card' className="e-card e-card-horizontal">
                                 <Card style={{ width: '9rem' }} className="e-card e-card-horizontal">
-                                    <Card.Img variant="top" src={image} />
-                                    <Card.Body>
+                                    <div className='card-image-container'>
+                                         <Card.Img variant="top" src={image} />
+                                    </div>
+                                    <Card.Body className='card-info-container'>
                                         <Card.Title className='card-info'>{name}</Card.Title>
-                                        <Card.Text className='card-info'>
+                                        <Card.Subtitle className='card-info-2'>
                                             {text}
-                                        </Card.Text>
-                                        <div className='card-info'>${price} / Price</div>
-                                        <div className='card-info'>
+                                        </Card.Subtitle>
+                                        <h6 className='card-info-3'>${price} / Price</h6>
+                                        <div className='card-info-4'>
                                         <Button variant="dark">Details</Button>
                                         </div>
                                     </Card.Body>

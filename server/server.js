@@ -7,6 +7,8 @@ require('dotenv').config({ path: './.env' });
 // Ensure environment variables are set.
 checkEnv();
 
+app.get('/', (req, res) => { res.send('Hello from Express!')})
+
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2020-08-27',
   appInfo: { // For sample support and debugging, not required for production:
@@ -125,7 +127,7 @@ app.post('/webhook', async (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(4242, () => console.log(`Node server listening on port ${4242}!`));
+app.listen(process.env.PORT || 3001, () => console.log(`Node server listening!`));
 
 
 function checkEnv() {

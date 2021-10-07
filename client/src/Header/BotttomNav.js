@@ -7,11 +7,18 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
+import logo from '../images/logo8.png'
+import './header.scss'
 
 const BottomNav = () => {
     return (
         <Navbar className='bottom-nav'>
-            <Navbar.Brand className='bottom-nav-buttons'>Logo?</Navbar.Brand>
+            <div className='logoContainer'>
+                <img src={logo} alt='logo' className='logo' />
+                <div className='logoHeader'>
+                    Sports Cards
+                </div>
+            </div>
             <Navbar.Collapse>
                 <Nav className="ms-auto">
                     {/* <NavDropdown title="Shop" id="basic-nav-dropdown" className='bottom-nav-buttons'>
@@ -23,7 +30,7 @@ const BottomNav = () => {
                     </NavDropdown> */}
                     <Nav.Link href="/" className='bottom-nav-buttons'>Home</Nav.Link>
                     <Nav.Link href="/shop" className='bottom-nav-buttons'>Shop</Nav.Link>
-                    <Nav.Link href="#home" className='bottom-nav-buttons'>Live Breaks</Nav.Link>
+                    <Nav.Link href="#home" className='bottom-nav-buttons'>Breaks</Nav.Link>
                     <Nav.Link href="#link" className='bottom-nav-buttons'>Release Schedule</Nav.Link>
                     <Nav.Link href="#link" className='bottom-nav-buttons'>About</Nav.Link>
                     <Form className="d-flex" id='search-bar'>
