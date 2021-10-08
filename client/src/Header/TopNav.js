@@ -57,7 +57,7 @@ const TopNav = ({ history }) => {
                                 <Modal.Header closeButton>
                                     <Modal.Title>Feature in Progress!</Modal.Title>
                                 </Modal.Header>
-                                <Modal.Body>Checkback soon for the ability to log-in to your account and receive special perks!</Modal.Body>
+                                <Modal.Body>Check back soon for the ability to log-in to your account and receive special perks!</Modal.Body>
                                 <Modal.Footer>
                                     <Button variant="secondary" onClick={handleClose}>
                                         Close
