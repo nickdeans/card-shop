@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import Button from 'react-bootstrap/Button'
 
 const Total = ({ itemCount, total, history, clearCart }) => {
     return (
@@ -9,8 +10,8 @@ const Total = ({ itemCount, total, history, clearCart }) => {
                 <p>{`Total: $${total}`}</p>
             </div>
             <div className='checkout'>
-                <button className='button is-black' onClick={() => history.push('/checkout')}>CHECKOUT</button>
-                <button className='button is-white' onClick={() => clearCart()}>CLEAR</button>
+                <Button variant='dark' className='button is-black' onClick={() => history.push('/checkout')}>CHECKOUT</Button>
+                <Button variant='danger' className='button is-white' onClick={() => clearCart()}>CLEAR</Button>
             </div>
         </div>
     )

@@ -47,6 +47,30 @@ const data = [
         text: '2000 Bowman Chrome'
 
     },
+        {
+        id: 7,
+        name: 'Kobe Bryant',
+        price: 670.99,
+        image: 'https://dilxwvfkfup17.cloudfront.net/eyJpdiI6IlczaUUrc2Ziay9GQmlVdElqV0JzUEE9PSIsInZhbHVlIjoiMnpFOEtqQkVwVlM5V3NQYXkxRDNXNU5PWmR5bVk5TzB3d3FBRUF4aGZTYkhSWVFrcGNSNXU4dm80S1JtODIvNVRzZ0psNUFIaUptWXpBclZzRm1aSGc9PSIsIm1hYyI6IjkxNGQyM2Q4Y2UzN2JlMzUwMDdmM2Q3ZGJjOGVmZjM2NjM3ZDI5Y2I3ZDM0ZThkMTcxZjNiNDk3YWUxOGI3ODUifQ==',
+        text: '1997 Metal Universe'
+
+    },
+    {
+        id: 8,
+        name: 'Luka Doncic',
+        price: 460.99,
+        image: 'https://dilxwvfkfup17.cloudfront.net/eyJpdiI6IkZvYzkxMXp6QXdwMnV0ZDBaZ3BsWFE9PSIsInZhbHVlIjoieWw3U1BNQURrR2tWbldhTFpqRnN5K2tWZHZFVlgyWXBuQlNKZEpJVTFZQjZVWlVnZ3grQ3gzL1B2dDhObGo5YSIsIm1hYyI6ImQwMDNiMWQ0ZjhjYmEwNjhhNzY2NTM5MmIxNGJkZWViNmFlYjJlM2U4NGVlNTA2OTI4MGM1MDBmNmU1MzBiZGUifQ==',
+        text: '2018 Flawless'
+
+    },
+    {
+        id: 9,
+        name: 'Justin Herbert',
+        price: 390.99,
+        image: 'https://dilxwvfkfup17.cloudfront.net/eyJpdiI6ImVPdHpXSEh6VnN1TXNqazh5YTdCK0E9PSIsInZhbHVlIjoiWkJyWTVybjVrWnJQRGlXL3JKMVl6Rk1QUU1pSGFkVHlkTlRjMWw4Yit3V3V0L2NDOHAybnBwdUpCK1N6dkh2YkdMSGpDeWJpNXFmQnJJN1JPNExuQkE9PSIsIm1hYyI6IjZhNDIwNjI3YjFkNGIzZTBmYzkyODE4M2Y3ZWFjYmU5ZDg2ODRlNWVhODk0ZWIzNDQwZmIzMTg1NTM5M2QxYWUifQ==',
+        text: '2020 Panini Flawless'
+
+    },
 ]
 
 export default data;
