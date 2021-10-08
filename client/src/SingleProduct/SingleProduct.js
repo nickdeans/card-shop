@@ -5,6 +5,7 @@ import { CartContext } from '../context/cart-context';
 import { isInCart } from '../helpers';
 import Layout from '../Layout/Layout';
 import './single-product.styles.scss';
+import Button from 'react-bootstrap/Button'
 
 const SingleProduct = ({ match, history: { push } }) => {
   const { products } = useContext(ProductsContext);
@@ -34,36 +35,38 @@ const SingleProduct = ({ match, history: { push } }) => {
         <div className='product-details'>
           <div className='name-price'>
             <h3>{name}</h3>
-            <p>{price}</p>
+            <div className='product-description'>
+            <p>
+              { text }
+            </p>
+          </div>
+            <p>${price} / PRICE</p>
           </div>
           <div className='add-to-cart-btns'>
             {
               !itemInCart &&
-              <button 
+              <Button 
+                variant="dark"
                 className='button is-white nomad-btn' 
                 id='btn-white-outline'
                 onClick={() => addProduct(product)}>
                   ADD TO CART
-              </button> 
+              </Button> 
             }
             {
               itemInCart &&
-              <button 
+              <Button 
+                variant="outline-dark"
                 className='button is-white nomad-btn' 
                 id='btn-white-outline'
                 onClick={()=> increase(product)}>
                   ADD MORE
-              </button>
+              </Button>
             }
             
-            <button className='button is-black nomad-btn' id='btn-white-outline'>
+            <Button href="/cart" variant="dark" className='button is-black nomad-btn' id='btn-white-outline' >
               PROCEED TO CHECKOUT
-            </button>
-          </div>
-          <div className='product-description'>
-            <p>
-              { text }
-            </p>
+            </Button>
           </div>
         </div>
       </div>

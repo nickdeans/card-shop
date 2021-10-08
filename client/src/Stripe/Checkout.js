@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import { CartContext } from '../context/cart-context'
 import { fetchFromAPI } from '../helpers'
 import { useStripe } from '@stripe/react-stripe-js';
+import Button from 'react-bootstrap/Button'
 
 
 const formatPrice = ({ amount, currency, quantity }) => {
@@ -96,17 +97,18 @@ const Checkout = () => {
                 +
               </button> */}
             </div>
-            <button role="link" id="submit" type="submit"> 
-              Buy x          <input
+            <Button variant='dark' role="link" id="submit" type="submit"                 value={quantity}
+> 
+              Buy           
+              {/* <input
                 type="number"
                 id="quantity-input"
                 min="1"
                 max="10"
-                value={quantity}
                 name="quantity"
                 readOnly
-              />
-            </button>
+              /> */}
+            </Button>
           </form>
         </section>
       </div>

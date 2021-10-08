@@ -7,10 +7,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
 import logo from '../images/logo8.png'
 import './header.scss'
+import { useState } from 'react'
 
 const BottomNav = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <Navbar className='bottom-nav'>
             <div className='logoContainer'>
@@ -21,18 +28,23 @@ const BottomNav = () => {
             </div>
             <Navbar.Collapse>
                 <Nav className="ms-auto">
-                    {/* <NavDropdown title="Shop" id="basic-nav-dropdown" className='bottom-nav-buttons'>
-                        <NavDropdown.Item href="#action/3.1" className='shop-dropdown-text' >Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2" className='shop-dropdown-text'>Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3" className='shop-dropdown-text'>Something</NavDropdown.Item>
-                        <NavDropdown.Divider className='shop-dropdown-divider'/>
-                        <NavDropdown.Item href="#action/3.4" className='shop-dropdown-text'>Separated link</NavDropdown.Item>
-                    </NavDropdown> */}
                     <Nav.Link href="/" className='bottom-nav-buttons'>Home</Nav.Link>
                     <Nav.Link href="/shop" className='bottom-nav-buttons'>Shop</Nav.Link>
-                    <Nav.Link href="#home" className='bottom-nav-buttons'>Breaks</Nav.Link>
-                    <Nav.Link href="#link" className='bottom-nav-buttons'>Release Schedule</Nav.Link>
-                    <Nav.Link href="#link" className='bottom-nav-buttons'>About</Nav.Link>
+                    <Nav.Link href="#home" className='bottom-nav-buttons' onClick={handleShow}>Breaks</Nav.Link>
+                    <Nav.Link href="#link" className='bottom-nav-buttons' onClick={handleShow}>Release Schedule</Nav.Link>
+                    <Nav.Link href="#link" className='bottom-nav-buttons' onClick={handleShow}>About</Nav.Link>
+                    <Modal show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Page in Progress!</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Check out our Shop Page in the meantime to purchase your favorite sports cards!</Modal.Body>
+                        <Modal.Footer>
+                            <Button variant="secondary" onClick={handleClose}>
+                                Close
+                            </Button>
+                        </Modal.Footer>
+                    </Modal>
+
                     <Form className="d-flex" id='search-bar'>
                         <FormControl
                             size='md'
@@ -41,7 +53,7 @@ const BottomNav = () => {
                             className="mr-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-success" className='bottom-nav-buttons'>Search</Button>
+                        <Button variant="outline-success" className='bottom-nav-buttons' onClick={handleShow}>Search</Button>
                     </Form>                    </Nav>
             </Navbar.Collapse>
         </Navbar>

@@ -7,10 +7,10 @@ const ProductsContextProvider = ({ children }) => {
     const [products] = useState(data);
 
     return (
-        <ProductsContext.Provider value={{ products }}>
-            {
-                children
-            }
+        <ProductsContext.Provider value={{ products }} >
+                {
+                    children
+                }
         </ProductsContext.Provider>
     )
 }
