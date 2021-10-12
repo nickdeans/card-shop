@@ -1,14 +1,14 @@
-import { useState, useContext } from 'react';
-import data from '../cardData';
+import React, { useState, useContext } from 'react';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 // import brady from '../images/brady.jpeg'
 import { isInCart } from '../helpers'
 import { CartContext } from '../context/cart-context'
+import { withRouter } from 'react-router-dom'
 
 
 const SingleCard = (props) => {
-    const { name, image, price, text, id } = props;
+    const { name, image, price, text, history, id } = props;
     const product = { name, image, price, text, id };
     const { addProduct, cartItems, increase } = useContext(CartContext)
     const itemInCart = isInCart(product, cartItems)
@@ -17,7 +17,7 @@ const SingleCard = (props) => {
         <>
             <div key={id} className='card' className="e-card e-card-horizontal">
                 <Card style={{ width: '9rem' }} className="e-card e-card-horizontal">
-                    <div className='card-image-container'>
+                    <div className='card-image-container' onClick={() => history.push(`/product/${id}`)}>
                             <Card.Img variant="top" src={image} />
                     </div>
                     <Card.Body className='card-info-container'>
@@ -45,4 +45,4 @@ const SingleCard = (props) => {
     )
 }
 
-export default SingleCard;
+export default withRouter(SingleCard);
