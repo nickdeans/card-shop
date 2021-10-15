@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import box3 from '../images/box3.png'
 import box4 from '../images/box4.png'
+import banner from '../images/banner.png'
 
 const BottomMain = () => {
     return (
@@ -34,6 +35,9 @@ const BottomMain = () => {
                     </div>
                 </div>
                 <div className='customImgFive' />
+                </div>
+                <div className='banner-container'>
+                    <img src={banner} alt='banner' className='banner-image'/>
                 </div>
         </>
     )

@@ -387,6 +387,15 @@ code {
   z-index: 0;
 }
 
+.banner-container {
+  height: 10rem;
+}
+
+.banner-image {
+  position: relative;
+  top: -20rem;
+}
+
 /*** Footer ***/
 
 .footer {
@@ -407,104 +416,5 @@ code {
   width: 100% !important;
   position: relative;
   bottom: -5rem;
-}
-
-.carousel-container {
-  position: relative;
-  z-index: 3;
-  top: -12rem;
-}
-
-.card-image-container {
-  background-color: white !important;
-  padding: .75rem;
-  margin: -1.1rem;
-  border-radius: 25px;
-}
-
-.card-image-container:hover {
-  cursor: pointer;
-}
-
-.card-info-container {
-  background-color: rgb(161, 161, 161);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  /* border-radius: 25px; */
-  top: 1.1rem;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-
-.card-content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  align-items: center;
-  top: -1.5rem !important;
-  position: relative;
-}
-
-.product-container3 {
-  width: 50rem !important;
-  background-color: #e86100 !important;
-  top: 10rem;
-  display: flex !important;
-  flex-direction: row-reverse !important;
-  align-content: center !important;
-  justify-content: center !important;
-  border: white solid 1rem !important;
-  align-items: center !important;
-  z-index: 1;
-
-}
-
-.product-container4 {
-  width: 35rem !important;
-  background-color: #e86100 !important;
-  top: 10rem;
-  display: flex !important;
-  flex-direction: row !important;
-  align-content: center !important;
-  justify-content: center !important;
-  border: white solid 1rem !important;
-  align-items: center !important;
-  z-index: 1;
-
-}
-
-.customImgThree {
-  height: 10rem;
-  /* background-color: rgb(18, 28, 71); */
-  content: "";
-  display: block;
-  position: relative;
-  top: -5rem;
-  left: 0;
-  right: 0;
-  transform: skewY(3deg);
-  z-index: 0;
-}
-
-.bottom-headline {
-  display: flex;
-  position: relative;
-  z-index: 3;
-  height: 3rem;
-  background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0,0,206), rgb(0, 0, 0));
-  color: white;
-  width: 20rem;
-  margin-left: auto;
-  margin-right: auto;
-  top: -18rem;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  border-radius: 25px !important;
-  box-shadow: rgb(0,0,206) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
 }
 
