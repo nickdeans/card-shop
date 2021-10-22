@@ -418,3 +418,24 @@ code {
   bottom: -5rem;
 }
 
+.footer {
+  width: 50%;
+  margin: 4rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.footer-logo {
+  width: 50%;
+  margin: 4rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.footer-logo {
+  width: 100% !important;
+  position: relative;
+  bottom: -5rem;
+}
+
+
