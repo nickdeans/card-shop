@@ -396,6 +396,38 @@ code {
   top: -20rem;
 }
 
+.customImgFour {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: rgb(175, 175, 175); */
+  /* background-image: linear-gradient(to right bottom, rgb(175, 175, 175) 0px, rgba(222, 224, 227, 0.8) 50%, rgb(117, 117, 117)); */
+  top: -25rem !important;
+  position: relative;
+  height: 50rem;
+}
+
+.customImgFive {
+  height: 10rem;
+  background-image: linear-gradient(to left top,#000 5%,rgb(0,0,148) 85%,rgb(0,0,206) 100%);
+  content: "";
+  display: block;
+  position: relative;
+  top: -23rem;
+  left: 0;
+  right: 0;
+  transform: skewY(3deg);
+  z-index: 0;
+}
+
+.banner-container {
+  height: 10rem;
+}
+
+.banner-image {
+  position: relative;
+  top: -20rem;
+}
+
 /*** Footer ***/
 
 .footer {
