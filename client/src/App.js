@@ -8,11 +8,7 @@ import SingleProduct from './SingleProduct/SingleProduct'
 import CartPage from './Cart/cart-page';
 import Pay from './Pay/Pay'
 import Success from './Success/Success'
-// import Checkout from './Checkout/Checkout'
-import CheckoutContainer from './Stripe/CheckoutContainer'
-
 import React from 'react';
-// import StripeContainer from './Stripe/StripeContainer';
 
 
 function App() {
@@ -26,7 +22,6 @@ function App() {
       <Route path='/shop' component={Shop} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
-      <Route path='/checkout' component={CheckoutContainer} />
       <Route path='/pay' component={Pay} />
       <Route path='/success' component={Success} />
       <Route path='*' component={NotFound} />

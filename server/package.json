@@ -1,23 +1,22 @@
 {
-  "name": "stripe-sample-accept-a-payment",
+  "name": "server2",
   "version": "1.0.0",
-  "description": "Stripe payment sample.",
-  "main": "server.js",
-  "engines": {
-    "node": "15.14.0",
-    "npm": "7.7.6"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
-  "author": "stripe-samples",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "stripe": "^8.176.0"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.15",
+    "stripe": "^8.190.0"
   }
 }
