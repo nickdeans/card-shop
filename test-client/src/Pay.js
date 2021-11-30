@@ -1,12 +1,13 @@
 import StripeCheckout from 'react-stripe-checkout'
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router'
 
 const KEY = 'pk_test_51JcDElKuTqehMMuIcod7LHO20bk3m92ouHTvTTzBvhjL4wZDeW2rVBbhWJuOPBiB3OvEYDKeAu2Zel21l8gr1GYp008TH7fCti'
 
 const Pay = () => {
     const [stripeToken, setStripeToken] = useState(null)
-    // const history = useHistory()
+    const history = useHistory()
 
     const onToken = (token) => {
         setStripeToken(token)
@@ -22,13 +23,13 @@ const Pay = () => {
                     }
                     )
                     console.log(res.data);
-                    // history.push('/success');
+                    history.push('/success');
             } catch(err) {
                 console.log(err)
             }
         };
         stripeToken && makeRequest();
-    }, [stripeToken])
+    }, [stripeToken, history])
 
     return (
         <div 
