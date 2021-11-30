@@ -265,13 +265,13 @@ code {
 
 .product-container {
   width: 35rem !important;
-  background-color: #e86100 !important;
+  background-image: linear-gradient(to right top,rgb(0, 0, 71) 1%,rgb(214, 86, 0, 0.9) 35%,#e86100 100%);
   top: 10rem;
   display: flex !important;
   flex-direction: row !important;
   align-content: center !important;
   justify-content: center !important;
-  border: white solid 1rem !important;
+  border: white solid .5rem !important;
   align-items: center !important;
   z-index: 1;
 
@@ -279,13 +279,13 @@ code {
 
 .product-container2 {
   width: 50rem !important;
-  background-color: #e86100 !important;
+  background-image: linear-gradient(to left bottom,rgb(0, 0, 71) 1%,rgb(214, 86, 0, 0.9) 35%,#e86100 100%);
   top: 10rem;
   display: flex !important;
   flex-direction: row-reverse !important;
   align-content: center !important;
   /* justify-content: center !important; */
-  border: white solid 1rem !important;
+  border: white solid .5rem !important;
   align-items: center !important;
 }
 
@@ -307,13 +307,13 @@ code {
 
 .product-container3 {
   width: 50rem !important;
-  background-color: #e86100 !important;
+  background-image: linear-gradient(to left top,rgb(0, 0, 71) 1%,rgb(214, 86, 0, 0.9) 35%,#e86100 100%);
   top: 10rem;
   display: flex !important;
   flex-direction: row-reverse !important;
   align-content: center !important;
   justify-content: center !important;
-  border: white solid 1rem !important;
+  border: white solid .5rem !important;
   align-items: center !important;
   z-index: 1;
 
@@ -321,13 +321,13 @@ code {
 
 .product-container4 {
   width: 35rem !important;
-  background-color: #e86100 !important;
+  background-image: linear-gradient(to right top,rgb(0, 0, 71) 1%,rgb(214, 86, 0, 0.9) 35%,#e86100 100%);
   top: 10rem;
   display: flex !important;
   flex-direction: row !important;
   align-content: center !important;
   justify-content: center !important;
-  border: white solid 1rem !important;
+  border: white solid .5rem !important;
   align-items: center !important;
   z-index: 1;
 
@@ -388,12 +388,18 @@ code {
 }
 
 .banner-container {
-  height: 10rem;
+  /* height: -50rem; */
 }
 
 .banner-image {
   position: relative;
-  top: -20rem;
+  top: 5rem;
+  width: 100%;
+
+}
+
+.bottom-main-container {
+  height: 50rem;
 }
 
 /*** Footer ***/
@@ -417,25 +423,3 @@ code {
   position: relative;
   bottom: -5rem;
 }
-
-.footer {
-  width: 50%;
-  margin: 4rem auto;
-  text-align: center;
-  position: relative;
-}
-
-.footer-logo {
-  width: 50%;
-  margin: 4rem auto;
-  text-align: center;
-  position: relative;
-}
-
-.footer-logo {
-  width: 100% !important;
-  position: relative;
-  bottom: -5rem;
-}
-
-
