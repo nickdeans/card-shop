@@ -18,7 +18,7 @@ const NewProduct = () => {
                                 </Card.Text>
                                 <div className='card-content'>
 
-                                <Button variant="dark" >Details</Button>
+                                {/* <Button variant="dark" >Details</Button> */}
                                 </div>
                             </Card.Body>
                         </Card>
@@ -31,7 +31,7 @@ const NewProduct = () => {
                                 <Card.Text>
                                 Donruss Optic returns to the hardwood this year with a loaded new rookie class and a full arsenal of stunning parallel cards.
                                 </Card.Text>
-                                <Button variant="dark">Details</Button>
+                                {/* <Button variant="dark">Details</Button> */}
                             </Card.Body>
                         </Card></div>
                 </div>

@@ -1,7 +1,3 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
-import Button from 'react-bootstrap/Button'
-
 import StripeCheckout from 'react-stripe-checkout'
 import {useState, useEffect} from 'react';
 import axios from 'axios';
@@ -9,8 +5,7 @@ import { useHistory } from 'react-router'
 
 const KEY = 'pk_test_51JcDElKuTqehMMuIcod7LHO20bk3m92ouHTvTTzBvhjL4wZDeW2rVBbhWJuOPBiB3OvEYDKeAu2Zel21l8gr1GYp008TH7fCti'
 
-
-const Total = ({ itemCount, total, clearCart }) => {
+const Pay = () => {
     const [stripeToken, setStripeToken] = useState(null)
     const history = useHistory()
 
@@ -37,13 +32,15 @@ const Total = ({ itemCount, total, clearCart }) => {
     }, [stripeToken, history])
 
     return (
-        <div className='total-container'>
-            <div className='total'>
-                <p>Total Items: {itemCount}</p>
-                <p>{`Total: $${total}`}</p>
-            </div>
-            <div className='checkout'>
-            {stripeToken ? (<span>Proccessing. Please Wait...</span>
+        <div 
+            style={{
+                height: '100vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}
+        >   
+        {stripeToken ? (<span>Proccessing. Please Wait...</span>
         ) : (
             <StripeCheckout name="Nick Shop" image=''
             billingAddress
@@ -52,16 +49,20 @@ const Total = ({ itemCount, total, clearCart }) => {
             amount={2000}
             token={onToken}
             stripeKey={KEY}>
-                <Button variant='dark' className='button is-black' 
+                <button
+                    style={{
+                        border: 'none',
+                        width: 120,
+                        borderRadius: 5,
+                        padding: '20px',
+                    }}
                     >
-                    CHECKOUT
-                </Button>
+                    Pay Now
+                </button>
             </StripeCheckout>
         )}
-                <Button variant='danger' className='button is-white' onClick={() => clearCart()}>CLEAR</Button>
-            </div>
         </div>
     )
 }
 
-export default withRouter(Total);
+export default Pay;
