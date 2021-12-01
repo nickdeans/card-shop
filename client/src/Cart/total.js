@@ -1,6 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Button from 'react-bootstrap/Button'
+import NDlogo from '../images/NDlogo.png'
+import './total.scss'
 
 import StripeCheckout from 'react-stripe-checkout'
 import {useState, useEffect} from 'react';
@@ -28,28 +30,29 @@ const Total = ({ itemCount, total, clearCart }) => {
                     }
                     )
                     console.log(res.data);
-                    history.push('/success');
-            } catch(err) {
-                console.log(err)
-            }
-        };
-        stripeToken && makeRequest();
-    }, [stripeToken, history])
-
-    return (
+                } catch(err) {
+                    console.log(err)
+                }
+            };
+            stripeToken && makeRequest();
+        }, [stripeToken, history])
+        
+        return (
         <div className='total-container'>
+            <h2>Order <u>Summary</u></h2>
             <div className='total'>
                 <p>Total Items: {itemCount}</p>
+                <p>Shipping: FREE</p>
                 <p>{`Total: $${total}`}</p>
             </div>
             <div className='checkout'>
-            {stripeToken ? (<span>Proccessing. Please Wait...</span>
+            {stripeToken ? (<span>Proccessing. Please Wait... {history.push('/success')}</span> 
         ) : (
-            <StripeCheckout name="Nick Shop" image=''
+            <StripeCheckout name="ND Sports Cards" image={NDlogo} 
             billingAddress
             shippingAddress
-            description='your total in $20'
-            amount={2000}
+            description={`Your total is $${total}`}
+            amount={total * 100}
             token={onToken}
             stripeKey={KEY}>
                 <Button variant='dark' className='button is-black' 
@@ -58,7 +61,7 @@ const Total = ({ itemCount, total, clearCart }) => {
                 </Button>
             </StripeCheckout>
         )}
-                <Button variant='danger' className='button is-white' onClick={() => clearCart()}>CLEAR</Button>
+                <Button variant='danger' className='button-is-white' onClick={() => clearCart()}>CLEAR</Button>
             </div>
         </div>
     )
