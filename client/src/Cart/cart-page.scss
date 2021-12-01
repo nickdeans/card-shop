@@ -4,7 +4,9 @@ h1, .empty-cart {
   
   .cart-item {
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 2rem;
     padding: 1rem;
   
@@ -69,4 +71,23 @@ h1, .empty-cart {
         width: 200px;
       }
     }
+  }
+
+  .product-list-title {
+    margin-top: 5rem;
+    text-align: center;
+    box-shadow: rgb(0,0,206) -3px 3px, rgba(5, 9, 65, 0.3) -5px 5px, rgba(13, 20, 82, 0.2) -10px 10px, rgba(24, 25, 92, 0.1) -14px 14px, rgba(30, 35, 87, 0.05) -18px 18px;
+    top: -2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 25px !important;
+    display: flex;
+    position: relative;
+    height: 3rem;
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0,0,206), rgb(0, 0, 0));
+    color: white;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
   }

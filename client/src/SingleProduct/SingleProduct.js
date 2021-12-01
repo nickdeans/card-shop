@@ -34,7 +34,7 @@ const SingleProduct = ({ match, history: { push } }) => {
         </div>
         <div className='product-details'>
           <div className='name-price'>
-            <h3>{name}</h3>
+            <h3><u>{name}</u></h3>
             <div className='product-description'>
             <p>
               { text }
@@ -64,7 +64,7 @@ const SingleProduct = ({ match, history: { push } }) => {
               </Button>
             }
             
-            <Button href="/cart" variant="dark" className='button is-black nomad-btn' id='btn-white-outline' >
+            <Button href="/cart" variant="primary" className='checkout-btn' id='btn-white-outline' >
               PROCEED TO CHECKOUT
             </Button>
           </div>

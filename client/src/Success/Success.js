@@ -10,10 +10,14 @@ const Success = () => {
       <div className='success-header'>
         <h1>Payment completed :)</h1>
         <h1>Thank you for shopping at ND Sports Cards!</h1>
+        <h3 className='link'><Link to="/">Return Home</Link></h3>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
-      <h3 className='link'><Link to="/">Return Home</Link></h3>
     </Layout>
-
   );
 };
 
