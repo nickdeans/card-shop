@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import logo from '../images/logo8.png'
 import './header.scss'
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 const BottomNav = () => {
@@ -20,12 +21,14 @@ const BottomNav = () => {
 
     return (
         <Navbar className='bottom-nav'>
+                <Link to="/" style={{color: 'black'}} >
             <div className='logoContainer'>
-                <img src={logo} alt='logo' className='logo' />
-                <div className='logoHeader'>
-                    Sports Cards
-                </div>
+                    <img src={logo} alt='logo' className='logo' />
+                    <div className='logoHeader'>
+                        Sports Cards
+                    </div>
             </div>
+                </Link>
             <Navbar.Collapse>
                 <Nav className="ms-auto">
                     <Nav.Link href="/" className='bottom-nav-buttons'>Home</Nav.Link>
