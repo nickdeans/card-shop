@@ -24,7 +24,7 @@ const Total = ({ itemCount, total, clearCart }) => {
         const makeRequest = async () => {
             try{
                 const res = await axios.post(
-                    'http://localhost:5000/api/checkout/payment', {
+                    'https://nd-sports-cards.herokuapp.com/api/checkout/payment', {
                         tokenId: stripeToken.id,
                         amount: 2000,
                     }
@@ -46,7 +46,7 @@ const Total = ({ itemCount, total, clearCart }) => {
                 <p>{`Total: $${total}`}</p>
             </div>
             <div className='checkout'>
-            {stripeToken ? (<span>Proccessing. Please Wait... {history.push('/success')}</span> 
+            {stripeToken ? (<span>Proccessing. Please Wait... {history.push('/success')} {clearCart()}</span> 
         ) : (
             <StripeCheckout name="ND Sports Cards" image={NDlogo} 
             billingAddress
