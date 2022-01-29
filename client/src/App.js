@@ -9,6 +9,7 @@ import CartPage from './Cart/cart-page';
 import Pay from './Pay/Pay'
 import Success from './Success/Success'
 import React from 'react';
+import Breaks from './Pages/Breaks'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Switch>
       <Route exact path='/' component={HomePage} />
       <Route path='/shop' component={Shop} />
+      <Route path='/breaks' component={Breaks} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
       <Route path='/pay' component={Pay} />

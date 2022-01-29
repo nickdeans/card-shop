@@ -23,7 +23,7 @@ const SingleCard = (props) => {
                     </div>
                     <Card.Body className='card-info-container'>
                         <div className='card-content-container'>
-                        <Card.Title className='card-info'>{name}</Card.Title>
+                        <h6 className='card-info1'>{name}</h6>
                         <Card.Subtitle className='card-info-2'>
                             {text}
                         </Card.Subtitle>

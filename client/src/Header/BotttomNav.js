@@ -33,7 +33,7 @@ const BottomNav = () => {
                 <Nav className="ms-auto">
                     <Nav.Link href="/" className='bottom-nav-buttons'>Home</Nav.Link>
                     <Nav.Link href="/shop" className='bottom-nav-buttons'>Shop</Nav.Link>
-                    <Nav.Link href="#home" className='bottom-nav-buttons' onClick={handleShow}>Breaks</Nav.Link>
+                    <Nav.Link href="/breaks" className='bottom-nav-buttons'>Breaks</Nav.Link>
                     <Nav.Link href="#link" className='bottom-nav-buttons' onClick={handleShow}>Release Schedule</Nav.Link>
                     <Nav.Link href="#link" className='bottom-nav-buttons' onClick={handleShow}>About</Nav.Link>
                     <Modal show={show} onHide={handleClose}>

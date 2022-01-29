@@ -150,13 +150,12 @@ code {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card-info {
+.card-info1 {
   display: flex;
   justify-content: center;
   position: relative;
   top: 1rem;
-  font-size: 20px !important;
-
+  font-size: 23px !important;
 }
 
 .card-info-2 {
@@ -217,8 +216,13 @@ code {
   align-content: center;
   text-align: center;
   align-items: center;
-  top: -1.5rem !important;
+  bottom: 10% !important;
   position: relative;
+  /* height: 100rem; */
+}
+
+.single-card-img {
+  height: 23rem !important;
 }
 
 /*** New Releases ***/
