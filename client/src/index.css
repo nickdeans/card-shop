@@ -235,7 +235,7 @@ code {
   display: flex;
   justify-content: space-evenly;
   /* background-color: rgb(175, 175, 175); */
-  background-image: linear-gradient(to right bottom, rgb(175, 175, 175) 0px, rgba(222, 224, 227, 0.8) 50%, rgb(117, 117, 117));
+  background-image: linear-gradient(to right bottom, rgb(175, 175, 175) 0px, rgba(155, 155, 155, 0.8) 50%, rgb(117, 117, 117));
   top: -7rem !important;
   position: relative;
   height: 50rem;
