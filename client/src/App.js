@@ -10,6 +10,7 @@ import Pay from './Pay/Pay'
 import Success from './Success/Success'
 import React from 'react';
 import Breaks from './Pages/Breaks'
+import Releases from './Pages/Releases'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route exact path='/' component={HomePage} />
       <Route path='/shop' component={Shop} />
       <Route path='/breaks' component={Breaks} />
+      <Route path='/releases' component={Releases} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
       <Route path='/pay' component={Pay} />
