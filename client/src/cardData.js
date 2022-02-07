@@ -71,6 +71,30 @@ const data = [
         text: '2020 Panini Flawless'
 
     },
+    {
+        id: 10,
+        name: 'Mike Trout',
+        price: 490.25,
+        image: 'https://dilxwvfkfup17.cloudfront.net/eyJpdiI6InhxUEFza3oyNjNPZDA3emdveU9ORnc9PSIsInZhbHVlIjoiM0hVdDN5cTBSaHhyVjVwcjlZdUFhR0M4YzRlWDQvQllkUTJERGsrUmtjOWxUL0k0dEdDT2QvbnU3cThGWWJodHRENDRuMXNmMFFkakZnZW9iWEpXMkE9PSIsIm1hYyI6IjhmYjI4OTc3NzhjZGQwMWU1ZDdkYTMyODJlOGVjMmQ0NGU2ZDRmMThkMmUzOGFjNDk1ODVjODQ3ZDA1MjBjNzMiLCJ0YWciOiIifQ==',
+        text: '2009 Bowman Chrome'
+
+    },
+    {
+        id: 11,
+        name: 'Lebron James',
+        price: 190.75,
+        image: 'https://dilxwvfkfup17.cloudfront.net/eyJpdiI6ImlYeVFsbGtETFlVUzN0a2hvelZGWXc9PSIsInZhbHVlIjoiYTNRbjl1ZlFGd1Z1WHUrSmlySk1JNXlwalZ2ZXpJTVdUNi9EM094dWZwZ1BhZUQ1L1U5TUNhdExzSFc0Zjk2K1owcjNVNXlCL0Qyc1Q1WlIrZmRlUkE9PSIsIm1hYyI6IjQyYWVmNTVjZGY0OWQzZTc1ZWFmNTg0ZTMxMWUyMmE4YzgwZjE0MGRjYWVjYzI3MzQzNWFhZDRiYTU0MWJiMDAiLCJ0YWciOiIifQ==',
+        text: '2003 Upper Deck'
+
+    },
+    {
+        id: 12,
+        name: 'Stephen Curry',
+        price: 690.25,
+        image: 'https://dilxwvfkfup17.cloudfront.net/eyJpdiI6IkhMTkhOQ3ZxTjFUeDVJNnZzaGM0YUE9PSIsInZhbHVlIjoiUjZ2bUczckhTK000L1R5aGtIQmx3WHRFVTg2Uk9XT09kKy91NG12UnVBL1FGQWdPdTFWU2VYOVpDUGxoZEdUUWVrNXoxdjBhc2VHcUZPS0xXd085TVE9PSIsIm1hYyI6IjZkMzQ1NjhjMGNhMTMwZWUxYzM4ZDQyOWJkYjg5OTNhMjY3OTcwYmVhMGU1NDZkM2Y5ODA5M2JmOWUxNGEzMzEiLCJ0YWciOiIifQ==',
+        text: '2009 Topps'
+
+    },
 ]
 
 export default data;

@@ -11,7 +11,12 @@
     align-self: center;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+  }
 
+  .featured-product:hover {
+    transform: scale(1.05);
+    box-shadow: rgb(216, 86, 0) 0px 5px 15px;
   }
 
   .featured-image {
