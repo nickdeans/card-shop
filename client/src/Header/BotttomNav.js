@@ -35,7 +35,7 @@ const BottomNav = () => {
                     <Nav.Link href="/shop" className='bottom-nav-buttons'>Shop</Nav.Link>
                     <Nav.Link href="/breaks" className='bottom-nav-buttons'>Breaks</Nav.Link>
                     <Nav.Link href="/releases" className='bottom-nav-buttons'>Releases</Nav.Link>
-                    <Nav.Link href="#link" className='bottom-nav-buttons' onClick={handleShow}>About</Nav.Link>
+                    <Nav.Link href="/about" className='bottom-nav-buttons'>About</Nav.Link>
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
                             <Modal.Title>Page in Progress!</Modal.Title>
