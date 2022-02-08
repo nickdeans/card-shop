@@ -11,6 +11,7 @@ import Success from './Success/Success'
 import React from 'react';
 import Breaks from './Pages/Breaks'
 import Releases from './Pages/Releases'
+import About from './Pages/About'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path='/shop' component={Shop} />
       <Route path='/breaks' component={Breaks} />
       <Route path='/releases' component={Releases} />
+      <Route path='/about' component={About} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
       <Route path='/pay' component={Pay} />
