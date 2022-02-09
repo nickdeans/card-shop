@@ -1,8 +1,8 @@
 import Card from 'react-bootstrap/Card'
-import box2 from '../images/opticc.png'
+import meImage from '../images/me.PNG'
 import React, { useContext } from 'react';
 import Layout from '../Layout/Layout';
-import './breaks.styles.scss';
+import './about.styles.scss';
 
 const About = () => {
 
@@ -11,25 +11,21 @@ const About = () => {
     <Layout>
       <div className='product-list-container'>
         <h2 className='product-list-title'>About</h2>
-      </div>
-      <div className='breaks-container'>   
-      <div className='info-container'>
-        <div className='info-box'>
-            <h1 className='break-header' >About</h1>
-        </div>
-      </div>                     
-      <div className='card-container'>
+      </div>               
+      <div className='about-container'>
             <Card className='product-container2' style={{position: "relative",width: "50%",display: "flex",top: "0rem"}}>
-                <Card.Img variant="top" src={box2} className='box-img' />
+                <Card.Img variant="top" src={meImage} className="me-image" />
                 <Card.Body className='product-info'>
-                    <h1>Image Header</h1>
-                    <h6 className="release-date-heading">Coming Soon</h6>
-                    <Card.Text style={{display: "flex", textAlign: "left"}}>
-                        About text                    
+                    <h1>About Me!</h1>
+                    <Card.Text style={{display: "flex", textAlign: "center"}}>
+                        <p>My name is Nick and I am a software developer and solutions architect. I created this web application to combine two of my favorite passions - Sports Cards and Software Development!
+                            <br/>
+                            <br/>
+                            Check out my <a href="https://www.linkedin.com/in/nickabramowicz/">LinkedIn</a> to know more!
+                        </p>
                     </Card.Text>
                 </Card.Body>
             </Card>
-        </div>
         </div>
     </Layout>
     </div>
