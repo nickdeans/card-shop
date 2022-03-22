@@ -13,6 +13,11 @@
     top: -1.5rem;
     margin-left: 2rem;
   }
+
+  .logo:hover {
+    transition: all 1s;
+    transform: rotate(360deg);
+  }
   
   .logoHeader {
     color: white;
@@ -24,3 +29,20 @@
     display: flex;
     align-items: center;
   }
+
+.burger-menu {
+  color: white;
+  font-size: 4rem;
+  position: fixed;
+  right: 3rem;
+  top: 3.75rem;
+  transition: 1s;
+  cursor: pointer;
+} 
+
+@media screen and (min-width: 1025px) {
+  .burger-menu {
+    display: none
+  }
+  
+}

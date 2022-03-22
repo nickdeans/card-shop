@@ -12,6 +12,8 @@ import logo from '../images/logo8.png'
 import './header.scss'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { FaBars } from "react-icons/fa";
+
 
 const BottomNav = () => {
     const [show, setShow] = useState(false);
@@ -22,15 +24,16 @@ const BottomNav = () => {
     return (
         <Navbar className='bottom-nav'>
                 <Link to="/" style={{color: 'black'}} >
-            <div className='logoContainer'>
-                    <img src={logo} alt='logo' className='logo' />
-                    <div className='logoHeader'>
-                        Sports Cards
+                    <div className='logoContainer'>
+                            <img src={logo} alt='logo' className='logo' />
+                            <div className='logoHeader'>
+                                Sports Cards
+                            </div>
                     </div>
-            </div>
                 </Link>
+                    <FaBars className='burger-menu' />
             <Navbar.Collapse>
-                <Nav className="ms-auto">
+                <Nav className="ms-auto hello">
                     <Nav.Link href="/" className='bottom-nav-buttons'>Home</Nav.Link>
                     <Nav.Link href="/shop" className='bottom-nav-buttons'>Shop</Nav.Link>
                     <Nav.Link href="/breaks" className='bottom-nav-buttons'>Breaks</Nav.Link>
