@@ -4,10 +4,19 @@ import data from '../cardData';
 export const ProductsContext = createContext();
 
 const ProductsContextProvider = ({ children }) => {
-    const [products] = useState(data);
+    const [products, setProducts] = useState(data);
+
+    const filterItems = (category) => {
+        if(category === 'all') {
+            setProducts(data);
+            return
+        }
+        const newItems = data.filter(product => product.category === category);
+        setProducts(newItems)
+    }
 
     return (
-        <ProductsContext.Provider value={{ products }} >
+        <ProductsContext.Provider value={{ products, filterItems }} >
                 {
                     children
                 }
