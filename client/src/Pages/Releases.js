@@ -36,52 +36,52 @@ const Releases = () => {
                         <th>SPORT</th>
                     </tr>
                     <tr>
-                        <td>Jan 18th, 2022</td>
+                        <td>May 18th, 2022</td>
                         <td>2022 Bowman Sapphire Baseball</td>
                         <td>Baseball</td>
                     </tr>
                     <tr>
-                        <td>Jan 21st, 2022</td>
+                        <td>May 21st, 2022</td>
                         <td>2022 Leaf Flash Baseball</td>
                         <td>Baseball</td>
                     </tr>
                     <tr>
-                        <td>Jan 25th, 2022</td>
+                        <td>May 25th, 2022</td>
                         <td>2022 Panini Flawless Basketball</td>
                         <td>Basketball</td>
                     </tr>
                     <tr>
-                        <td>Jan 29th, 2022</td>
+                        <td>May 29th, 2022</td>
                         <td>2022 Panini Playoff Football</td>
                         <td>Football</td>
                     </tr>
                     <tr>
-                        <td>Feb 1st, 2022</td>
+                        <td>June 1st, 2022</td>
                         <td>2022 Onyx Vintage College Football</td>
                         <td>Football</td>
                     </tr>
                     <tr>
-                        <td>Feb 7th, 2022</td>
+                        <td>June 7th, 2022</td>
                         <td>2022 Topps Formula 1 Racing</td>
                         <td>Racing</td>
                     </tr>
                     <tr>
-                        <td>Feb 13th, 2022</td>
+                        <td>June 13th, 2022</td>
                         <td>2022 Pro Set Power Football</td>
                         <td>Football</td>
                     </tr>
                     <tr>
-                        <td>Feb 18th, 2022</td>
+                        <td>June 18th, 2022</td>
                         <td>2022 Donruss Basketball</td>
                         <td>Basketball</td>
                     </tr>
                     <tr>
-                        <td>Feb 26th, 2022</td>
+                        <td>June 26th, 2022</td>
                         <td>2022 Bowman Heritage Baseball</td>
                         <td>Baseball</td>
                     </tr>
                     <tr>
-                        <td>Mar 1st, 2022</td>
+                        <td>July 1st, 2022</td>
                         <td>2022 Leaf Valiant Football</td>
                         <td>Football</td>
                     </tr>
