@@ -12,7 +12,7 @@ const NewProduct = () => {
                         <Card className='product-container'>
                             <Card.Img variant="top" src={box} className='box-img' />
                             <Card.Body className='product-info'>
-                                <h1>2021 Certified Football Box</h1>
+                                <h1>2022 Certified Football Box</h1>
                                 <Card.Text>
                                 A popular early-season collecting staple arrives with the release of Panini America’s 2021 Certified Football, a captivating, colorful product. 
                                 </Card.Text>
@@ -27,7 +27,7 @@ const NewProduct = () => {
                         <Card className='product-container2'>
                             <Card.Img variant="top" src={box2} className='box-img' />
                             <Card.Body className='product-info'>
-                                <h1>2021 Optic Basketball Box</h1>
+                                <h1>2022 Optic Basketball Box</h1>
                                 <Card.Text>
                                 Donruss Optic returns to the hardwood this year with a loaded new rookie class and a full arsenal of stunning parallel cards.
                                 </Card.Text>

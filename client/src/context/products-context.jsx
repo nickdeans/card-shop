@@ -7,7 +7,7 @@ const ProductsContextProvider = ({ children }) => {
     const [products, setProducts] = useState(data);
 
     const filterItems = (category) => {
-        if(category === 'all') {
+        if(category === 'All') {
             setProducts(data);
             return
         }
