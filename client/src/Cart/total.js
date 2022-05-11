@@ -10,7 +10,7 @@ import axios from 'axios';
 import { useHistory } from 'react-router'
 
 const KEY = 'pk_test_51JcDElKuTqehMMuIcod7LHO20bk3m92ouHTvTTzBvhjL4wZDeW2rVBbhWJuOPBiB3OvEYDKeAu2Zel21l8gr1GYp008TH7fCti'
-
+// https://nd-sports-cards.herokuapp.com/api/checkout/payment
 
 const Total = ({ itemCount, total, clearCart }) => {
     const [stripeToken, setStripeToken] = useState(null)
@@ -24,7 +24,7 @@ const Total = ({ itemCount, total, clearCart }) => {
         const makeRequest = async () => {
             try{
                 const res = await axios.post(
-                    'https://nd-sports-cards.herokuapp.com/api/checkout/payment', {
+                    'http://localhost:5000/api/checkout/payment', {
                         tokenId: stripeToken.id,
                         amount: 2000,
                     }
