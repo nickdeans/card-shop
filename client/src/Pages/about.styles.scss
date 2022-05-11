@@ -1,9 +1,17 @@
 .me-image {
-    width: 17rem;
-    border-radius: 25px
+  width: 17rem;
+  border-radius: 25px;
 }
 
 .about-container {
-    display: flex;
-    justify-content: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  height: 20rem !important;
+  width: 25% !important;
+  padding: 20px !important;
 }

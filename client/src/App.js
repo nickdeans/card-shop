@@ -12,6 +12,8 @@ import React from 'react';
 import Breaks from './Pages/Breaks'
 import Releases from './Pages/Releases'
 import About from './Pages/About'
+import Login from './Pages/Login'
+import Register from './Pages/Register'
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Route path='/breaks' component={Breaks} />
       <Route path='/releases' component={Releases} />
       <Route path='/about' component={About} />
+      <Route path='/login' component={Login} />
+      <Route path='/register' component={Register} />
       <Route path='/product/:id' component={SingleProduct} />
       <Route path='/cart' component={CartPage} />
       <Route path='/pay' component={Pay} />
