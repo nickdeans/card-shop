@@ -11,7 +11,27 @@
 }
 
 .register-card {
-  height: 20rem !important;
+  height: 19rem !important;
   width: 25% !important;
   padding: 20px !important;
+}
+
+.inputs {
+  margin: 0.25rem;
+}
+
+.reister-btn-container {
+  margin: 0.25rem;
+}
+
+.register-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

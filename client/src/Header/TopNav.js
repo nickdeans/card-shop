@@ -18,11 +18,6 @@ const TopNav = ({ history }) => {
     const { itemCount, cartItems } = useContext(CartContext)
     console.log('CartItems:', cartItems);
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
     return (
         <div className='top-nav-container'>
             <div style={{ backgroundColor: 'black', height: '3rem' }}>
@@ -48,22 +43,11 @@ const TopNav = ({ history }) => {
                             Cart
                         </div>
                         </Navbar.Brand>
-                        <Navbar.Brand style={{ color: 'white' }}>
-                            <div onClick={handleShow} class='cart-nav-styling'>
+                        <Navbar.Brand style={{ color: 'white', marginLeft: "-1rem" }}>
+                            <div class='cart-nav-styling'>
                                 <FaLock className='icon-logos' />
-                            Login
+                                <a href="/login" className='login-btn'>Login</a>
                             </div>
-                            <Modal show={show} onHide={handleClose}>
-                                <Modal.Header closeButton>
-                                    <Modal.Title>Feature in Progress!</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>Check back soon for the ability to log-in to your account and receive special perks!</Modal.Body>
-                                <Modal.Footer>
-                                    <Button variant="secondary" onClick={handleClose}>
-                                        Close
-                                    </Button>
-                                </Modal.Footer>
-                            </Modal>
                         </Navbar.Brand>
                         <Navbar.Brand >
                             <a href='https://www.instagram.com/ndsportscards2/' target="_blank" rel="noopener noreferrer">
