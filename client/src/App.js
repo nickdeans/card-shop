@@ -19,9 +19,6 @@ import Register from './Pages/Register'
 function App() {
   return (
   <>
-        {/* <div className='App'>
-          <StripeContainer />
-        </div> */}
     <Switch>
       <Route exact path='/' component={HomePage} />
       <Route path='/shop' component={Shop} />
