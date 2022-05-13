@@ -2,9 +2,8 @@ import Card from 'react-bootstrap/Card'
 import meImage from '../images/me.PNG'
 import React from 'react';
 import Layout from '../Layout/Layout';
-import './about.styles.scss';
 import Button from 'react-bootstrap/Button'
-// import './login.scss'
+import './login.scss'
 
 const Login = () => {
 
@@ -14,13 +13,13 @@ const Login = () => {
         <div className='product-list-container hello'>
             <Card className='register-card'>
                 <h1>Login</h1>
-                <form className="form-container">
-                    <input className="inputs" placeholder='username' />
-                    <input className="inputs" placeholder='password' />
-                    <div className="reister-btn-container">
+                <form className="form-container-login">
+                    <input className="inputs-login" placeholder='username' />
+                    <input className="inputs-login" placeholder='password' />
+                    <div className="login-btn-container">
                         <Button variant="dark" type='button'>Login</Button>
                     </div>
-                    <div className="register-link-container">
+                    <div className="login-link-container">
                         <a href='/'>Forgot password?</a>
                         <a href='/register'>Create a new Account</a>
                     </div>
