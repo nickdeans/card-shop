@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import { CartContext } from '../context/cart-context';
 import Layout from '../Layout/Layout';
 import Total from './total'
-import Pay from '../Pay/Pay'
 import CartItem from './cart-item'
 import './cart-page.scss'
 
