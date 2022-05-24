@@ -15,7 +15,7 @@ const ProductsContextProvider = ({ children }) => {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                const res = await axios.get('https://nd-sports-cards.herokuapp.com')
+                const res = await axios.get('http://localhost:5000/api/products')
                 setProducts(res.data)
                 setFilteredProds(res.data)
             } catch(err) {}
