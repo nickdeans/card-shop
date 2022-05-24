@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
 import box from '../images/box.png'
 import box2 from '../images/opticc.png'
 

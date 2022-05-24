@@ -8,7 +8,7 @@ Version: 1.0.0
 
 ## Website
 
-- https://www.ndsportscards.com/shop
+- https://www.ndsportscards.com
 
 ### Overview
 

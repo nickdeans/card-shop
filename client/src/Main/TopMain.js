@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/Carousel'
-import { FaChevronCircleRight } from 'react-icons/fa'
 import cover1 from '../images/cover1.jpg'
 import banner1 from '../images/banner1.jpg'
 import banner3 from '../images/banner3.jpg'

@@ -3,11 +3,9 @@ import twitterLogo from '../images/twitter.svg'
 import youtubeLogo from '../images/youtube.svg'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Button from 'react-bootstrap/Button'
 import Dropdown from 'react-bootstrap/Dropdown'
-import Modal from 'react-bootstrap/Modal'
 import { CartContext } from '../context/cart-context';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom'
 import 'bootstrap/js/dist/dropdown'
 import './header.scss'
@@ -15,8 +13,7 @@ import { FaLock, FaShoppingCart, FaTty } from 'react-icons/fa'
 
 
 const TopNav = ({ history }) => {
-    const { itemCount, cartItems } = useContext(CartContext)
-    console.log('CartItems:', cartItems);
+    const { itemCount } = useContext(CartContext)
 
     return (
         <div className='top-nav-container'>
@@ -35,7 +32,7 @@ const TopNav = ({ history }) => {
                             </Dropdown.Menu>
                         </Dropdown>
                         <Navbar.Brand style={{ color: 'white' }} className='top-nav-text' onClick={() => history.push('/cart')}>
-                            <div class='cart-nav-styling'>
+                            <div>
                                 <FaShoppingCart className='icon-logos' />
                                 {
                                     itemCount > 0 ? <span className='cart-count'>{itemCount}</span> : null
@@ -44,7 +41,7 @@ const TopNav = ({ history }) => {
                         </div>
                         </Navbar.Brand>
                         <Navbar.Brand style={{ color: 'white', marginLeft: "-1rem" }}>
-                            <div class='cart-nav-styling'>
+                            <div>
                                 <FaLock className='icon-logos' />
                                 <a href="/login" className='login-btn'>Login</a>
                             </div>

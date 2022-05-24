@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card'
-import meImage from '../images/me.PNG'
 import React from 'react';
 import Layout from '../Layout/Layout';
 import Button from 'react-bootstrap/Button'

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 // import brady from '../images/brady.jpeg'
@@ -16,8 +16,8 @@ const SingleCard = (props) => {
 
     return (
         <>
-            <div key={id} className='card' className="e-card e-card-horizontal">
-                <Card style={{ width: '9rem' }} className="e-card e-card-horizontal">
+            <div key={id} className="e-card e-card-horizontal">
+                <Card style={{ width: '9rem' }} >
                     <div className='card-image-container' onClick={() => history.push(`/product/${id}`)}>
                             <Card.Img variant="top" src={image} className='single-card-img' />
                     </div>

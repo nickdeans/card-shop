@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card'
 import boxHoops from '../images/hoopsbox.png'
-import React, { useContext } from 'react';
+import React from 'react';
 import Layout from '../Layout/Layout';
 import './releases.styles.scss';
 
