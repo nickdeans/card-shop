@@ -7,14 +7,15 @@ import './shop.styles.scss';
 import Button from 'react-bootstrap/Button'
 
 const Shop = () => {
-  const { products, filterItems } = useContext(ProductsContext);
-  const allProducts = products.map(product => (
+  const { filteredProds, filterItems } = useContext(ProductsContext);
+  const allProducts = filteredProds.map(product => (
     <FeaturedProduct { ...product } key={product.id} />
   ));
-  const allCategories =  ['All', ...new Set(products.map(product => product.category))]
-
-  const [categories, setCategories] = useState(allCategories)
-
+  // const cats = new Set(filteredProds.map(product => product.category))
+  // use spread operator and add cats to allCategories array to make dynamic
+  const allCategories =  ['All', 'Baseball', "Football", "Basketball"]
+  const [categories] = useState(allCategories)
+  
   return (
     <Layout>
       <div className='product-list-container'>

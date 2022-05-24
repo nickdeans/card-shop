@@ -49,7 +49,7 @@ const CardsMain = () => {
                     rightChevron={<button><FaAngleRight /></button>}
                     outsideChevron
                     chevronWidth={chevronWidth}
-                    infiniteLoop='true'
+                    infiniteLoop={true}
                 >
                     {
                         allProducts
