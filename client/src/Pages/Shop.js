@@ -7,8 +7,8 @@ import './shop.styles.scss';
 import Button from 'react-bootstrap/Button'
 
 const Shop = () => {
-  const { products, filteredProds, filterItems } = useContext(ProductsContext);
-  const allProducts = products.map(product => (
+  const { filteredProds, filterItems } = useContext(ProductsContext);
+  const allProducts = filteredProds.map(product => (
     <FeaturedProduct { ...product } key={product.id} />
   ));
   // const cats = new Set(filteredProds.map(product => product.category))
