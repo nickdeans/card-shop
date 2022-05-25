@@ -5,7 +5,6 @@ import axios from 'axios'
 import data from '../cardData';
 
 // for local host development http://localhost:5000/api/products
-// Use filteredProds for api data
 
 export const ProductsContext = createContext();
 
