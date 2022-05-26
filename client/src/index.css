@@ -12,16 +12,19 @@ code {
 }
 
 .social-icon {
-  margin: 0.15rem;
+  margin-right: 0.15rem;
+  margin-left: 0.15rem;
+  margin-bottom: 0.3rem;
 }
 
 .nav-header {
   color: white;
-  margin-top: 0.75rem;
+  margin-top: 0.3rem;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -1rem;
 }
 
 .dropdown-menu {
@@ -30,13 +33,6 @@ code {
 
 .dropdown-item:hover {
   background-color: #e86100 !important;
-}
-
-.top-nav-text {
-  font-size: 1rem !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .cart-nav-styling:hover {
@@ -51,7 +47,6 @@ code {
 
 .cart-count {
   background-color: white;
-  color: black;
   border-radius: 25px;
   padding: 0.2rem;
   margin: 0.2rem;
@@ -59,11 +54,34 @@ code {
 
 .login-btn {
   text-decoration: none;
-  color: white;
+  color: white !important;
+  cursor: pointer;
 }
 
 .login-btn:hover {
+  color: #ff6a00 !important;
+}
+
+.cart-btn {
+  text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+
+.cart-btn :nth-child(2) {
+  color: black;
+}
+
+.cart-btn:hover :nth-child(2) {
+  color: #ff6a00;
+}
+
+.cart-btn:hover {
+  color: #ff6a00 !important;
+}
+
+.top-nav-text:hover {
+  color: #ff6a00 !important;
 }
 
 /*** Bottom Navbar Styling ***/
