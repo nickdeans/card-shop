@@ -19,32 +19,31 @@ const TopNav = ({ history }) => {
         <div className='top-nav-container'>
             <div style={{ backgroundColor: 'black', height: '3rem' }}>
                 <Navbar>
-                    <Nav className="ms-auto">
-                        <h6 className='nav-header'>#1 Card Shop out there!</h6>
-                        <Dropdown>
-                            <Dropdown.Toggle style={{ backgroundColor: 'transparent', borderBlockColor: 'transparent', border: 'transparent', marginRight: '-.70rem', fontSize: '1.25rem' }} className='top-nav-text'>
+                    <Nav className="ms-auto" >
+                        <Navbar.Brand style={{fontSize: '1rem'}}>
+                            <h6 className='nav-header'>#1 Card Shop out there!</h6>
+                        </Navbar.Brand>
+                        <Dropdown style={{marginTop: "-.25rem"}}>
+                            <Dropdown.Toggle style={{ backgroundColor: 'transparent', borderBlockColor: 'transparent', border: 'transparent', marginRight: '-.70rem', fontSize: '1rem', marginTop: '.3rem' }} className='top-nav-text'>
                                 <FaTty className='icon-logos' />
                                 Contact
-                        </Dropdown.Toggle>
+                            </Dropdown.Toggle>
                             <Dropdown.Menu className='dropdown-menu'>
                                 <Dropdown.Item style={{ color: 'white' }} href="" >Phone: 808-223-4355</Dropdown.Item>
                                 <Dropdown.Item style={{ color: 'white' }} href="#/action-2">Email: Nickabramowicz@gmail.com</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        <Navbar.Brand style={{ color: 'white' }} className='top-nav-text' onClick={() => history.push('/cart')}>
-                            <div>
+                        <Navbar.Brand style={{ color: 'black', fontSize: '1rem' }} className='top-nav-text' onClick={() => history.push('/cart')}>
+                            <div className='cart-btn'>
                                 <FaShoppingCart className='icon-logos' />
                                 {
                                     itemCount > 0 ? <span className='cart-count'>{itemCount}</span> : null
                                 }
                             Cart
-                        </div>
-                        </Navbar.Brand>
-                        <Navbar.Brand style={{ color: 'white', marginLeft: "-1rem" }}>
-                            <div>
-                                <FaLock className='icon-logos' />
-                                <a href="/login" className='login-btn'>Login</a>
                             </div>
+                        </Navbar.Brand>
+                        <Navbar.Brand style={{ marginLeft: "-1rem", fontSize: '1rem' }}>
+                                <a href="/login" className='login-btn'><FaLock className='icon-logos' />Login</a>
                         </Navbar.Brand>
                         <Navbar.Brand >
                             <a href='https://www.instagram.com/ndsportscards2/' target="_blank" rel="noopener noreferrer">
