@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../Layout/Layout'
+import Layout from '../../Body/Layout/Layout'
 import './success.scss'
 
 const Success = () => {

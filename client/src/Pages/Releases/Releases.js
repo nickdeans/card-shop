@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import boxHoops from '../images/hoopsbox.png'
 import React from 'react';
-import Layout from '../Layout/Layout';
+import Layout from '../../Body/Layout/Layout';
 import './releases.styles.scss';
 
 const Releases = () => {

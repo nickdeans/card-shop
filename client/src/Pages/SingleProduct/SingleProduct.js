@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
-import { ProductsContext } from '../context/products-context';
-import { CartContext } from '../context/cart-context';
-import { isInCart } from '../helpers';
-import Layout from '../Layout/Layout';
+import { ProductsContext } from '../../context/products-context';
+import { CartContext } from '../../context/cart-context';
+import { isInCart } from '../../utils/helpers';
+import Layout from '../../Body/Layout/Layout';
 import './single-product.styles.scss';
 import Button from 'react-bootstrap/Button'
 

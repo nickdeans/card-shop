@@ -4,7 +4,7 @@ import youtubeLogo from '../images/youtube.svg'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Dropdown from 'react-bootstrap/Dropdown'
-import { CartContext } from '../context/cart-context';
+import { CartContext } from '../../context/cart-context';
 import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom'
 import 'bootstrap/js/dist/dropdown'

@@ -1,17 +1,17 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route} from 'react-router-dom'
-import HomePage from './HomePage/HomePage'
-import NotFound from './404notfound'
-import Shop from './Pages/Shop'
-import SingleProduct from './SingleProduct/SingleProduct'
-import CartPage from './Cart/cart-page';
-import Success from './Success/Success'
+import HomePage from './Body/HomePage/HomePage'
+import NotFound from './utils/404notfound'
+import Shop from './Pages/Shop/Shop'
+import SingleProduct from './Pages/SingleProduct/SingleProduct'
+import CartPage from './Pages/Cart/Cart-page';
+import Success from './Pages/Success/Success'
 import React from 'react';
-import Breaks from './Pages/Breaks'
-import Releases from './Pages/Releases'
-import About from './Pages/About'
-import Login from './Pages/Login'
+import Breaks from './Pages/Breaks/Breaks'
+import Releases from './Pages/Releases/Releases'
+import About from './Pages/About/About'
+import Login from './Pages/Login/Login'
 import Register from './Pages/Register'
 
 

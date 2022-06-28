@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { isInCart } from '../helpers'
-import { CartContext } from '../context/cart-context'
+import { isInCart } from '../../utils/helpers'
+import { CartContext } from '../../context/cart-context'
 import { withRouter } from 'react-router-dom';
 import Button from 'react-bootstrap/Button'
 import './product.scss'

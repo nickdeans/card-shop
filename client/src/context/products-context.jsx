@@ -15,10 +15,12 @@ const ProductsContextProvider = ({ children }) => {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                const res = await axios.get('https://nd-sports-cards.herokuapp.com/api/products')
+                const res = await axios.get('http://localhost:5000/api/products')
                 setProducts(res.data)
                 setFilteredProds(res.data)
-            } catch(err) {}
+            } catch(err) {
+                console.log(err, "Unable to connect to API")
+            }
         }
         getProducts()
     }, [])

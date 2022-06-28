@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header/Header';
+import Header from '../Body/Header/Header';
 
 const NotFound = () => {
   const style = {

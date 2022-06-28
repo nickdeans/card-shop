@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 // import brady from '../images/brady.jpeg'
-import { isInCart } from '../helpers'
+import { isInCart } from '../utils/helpers'
 import { CartContext } from '../context/cart-context'
 import { withRouter } from 'react-router-dom'
 import './singleCard.scss'
