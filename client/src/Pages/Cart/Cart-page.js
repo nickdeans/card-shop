@@ -1,9 +1,9 @@
 import React from 'react';
 import { useContext } from 'react';
-import { CartContext } from '../context/cart-context';
-import Layout from '../Layout/Layout';
-import Total from './total'
-import CartItem from './cart-item'
+import { CartContext } from '../../context/cart-context';
+import Layout from '../../Body/Layout/Layout';
+import Total from './Total'
+import CartItem from './Cart-item'
 import './cart-page.scss'
 
 const CartPage = () => {

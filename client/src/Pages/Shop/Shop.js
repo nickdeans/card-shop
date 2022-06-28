@@ -1,8 +1,8 @@
 
 import React, { useContext, useState } from 'react';
-import Layout from '../Layout/Layout';
+import Layout from '../../Body/Layout/Layout';
 import FeaturedProduct from '../Product/Product';
-import { ProductsContext } from '../context/products-context';
+import { ProductsContext } from '../../context/products-context';
 import './shop.styles.scss';
 import Button from 'react-bootstrap/Button'
 

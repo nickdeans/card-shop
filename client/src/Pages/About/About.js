@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import meImage from '../images/me.PNG'
 import React from 'react';
-import Layout from '../Layout/Layout';
+import Layout from '../../Body/Layout/Layout';
 import './about.styles.scss';
 
 const About = () => {

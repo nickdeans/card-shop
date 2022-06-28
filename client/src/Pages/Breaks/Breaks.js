@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import box2 from '../images/opticc.png'
 import React from 'react';
-import Layout from '../Layout/Layout';
+import Layout from '../../Body/Layout/Layout';
 import './breaks.styles.scss';
 
 const Breaks= () => {

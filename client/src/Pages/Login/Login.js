@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card'
 import React from 'react';
-import Layout from '../Layout/Layout';
+import Layout from '../../Body/Layout/Layout';
 import Button from 'react-bootstrap/Button'
 import './login.scss'
 
